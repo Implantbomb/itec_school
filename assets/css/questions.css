@@ -1,0 +1,201 @@
+@font-face {
+	font-family: Montserrat-Black;
+	src: url('../fonts/Montserrat/Montserrat-Black.ttf');
+}
+
+@font-face {
+	font-family: Montserrat-Bold;
+	src: url('../fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+	font-family: Montserrat-SemiBold;
+	/* Гарнитура шрифта */
+	src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+	/* Путь к файлу со шрифтом */
+}
+
+@font-face {
+	font-family: Montserrat-Medium;
+	src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+	font-family: Montserrat-Regular;
+	src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+	font-family: Montserrat-Light;
+	src: url('../fonts/Montserrat/Montserrat-Light.ttf');
+}
+
+@font-face {
+	font-family: Montserrat-Thin;
+	src: url(../fonts/Montserrat/Montserrat-Thin.ttf);
+}
+
+@font-face {
+	font-family: Montserrat Alternates-Bold;
+	src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf');
+}
+
+@font-face {
+	font-family: Montserrat Alternates-Medium;
+	src: url(../fonts/Montserrat_Alternates/MontserratAlternates-Medium.ttf);
+}
+
+@font-face {
+	font-family: Montserrat Alternates-Regular;
+	src: url(../fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'Montserrat Alternates-Black';
+	src: url('../fonts/Montserrat_Alternates/MontserratAlternates-Black.ttf');
+}
+
+@font-face {
+	font-family: Roboto-Thin;
+	src: url("../fonts/Roboto/Roboto-Thin.ttf");
+}
+
+@font-face {
+	font-family: Roboto-Medium;
+	src: url("../fonts/Roboto/Roboto-Medium.ttf");
+}
+
+@font-face {
+	font-family: Roboto-Light;
+	src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+	font-family: KronaOne-Regular;
+	src: url(../fonts/Krona_One/KronaOne-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+li {
+	list-style-type: none;
+}
+
+.contacts {
+	width: 100%;
+}
+
+.contacts__wrapper {
+	max-width: 1140px;
+	display: flex;
+	justify-content: center;
+	margin: 125px auto;
+}
+
+.contacts__form {
+	text-align: center;
+	padding: 20px;
+	width: 700px;
+	height: 338px;
+	border-radius: 5px;
+	border: 1px solid #f3db01;
+}
+
+.contacts__header {
+	font-size: 28px;
+	font-family: Montserrat-Medium;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 34px;
+}
+
+.contacts__text {
+	display: block;
+	margin-top: 9px;
+	font-family: Montserrat-Light;
+	font-size: 15px;
+	line-height: 18px;
+}
+
+.contacts__number {
+	display: flex;
+	justify-content: space-between;
+	width: 350px;
+	margin: 40px auto;
+	position: relative;
+}
+
+.contacts__number span {
+	display: block;
+}
+
+.contacts__number span:first-child {
+	margin-bottom: 10px;
+}
+
+.contacts__number div {
+	position: absolute;
+	font-family: Montserrat-Medium;
+	font-size: 18px;
+	left: 130px;
+}
+
+.contacts__title {
+	font-family: Montserrat-Light;
+	font-size: 15px;
+}
+
+.contacts__email,
+.contacts__telegram {
+	display: flex;
+	justify-content: space-between;
+	width: 350px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.contacts__email div,
+.contacts__telegram div {
+	font-family: Montserrat-Medium;
+	font-size: 18px;
+	position: absolute;
+	left: 130px;
+}
+
+.contacts__title {
+	font-family: Montserrat-Light;
+	font-size: 15px;
+}
+
+.contacts__email {
+	margin-top: 72px;
+	margin-bottom: 20px;
+}
+
+.contacts__telegram {
+	margin-bottom: 17px;
+}
+
+.contacts__header {
+	font-family: Montserrat-Medium;
+	font-size: 28px;
+	line-height: 34px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #2E2401;
+}
+
+@media(max-width: 1199px){
+    .contacts{
+        display: none;
+    }
+}

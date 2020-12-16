@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITEC - Курсы</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__wrapper">
+                <a class="header__logo" href="main.html">
+                    <img class="header__logo-img" src="img/logo_ITEC.svg">
+                </a>
+                <a class="header__login">Войти</a>
+            </div>
+            <div class="header__menu">
+                <a class="header__menu-item" href="courses.html">Курсы</a>
+                <a class="header__menu-item" href="#">Тест</a>
+                <a class="header__menu-item" href="#">О нас</a>
+                <a class="header__menu-item" href="#">IT-новости</a>
+                <a class="header__menu-item" href="contacts.html">Контакты</a>
+            </div>
+            <div class="header__contact">
+                <div class="header__contact-text">
+                    <p>Не жди лучшего времени!</p>
+                    <p>Звони прямо сейчас!</p>
+                </div>
+                <div class="header__contact-number">
+                    <p>8 (029) 556 40 29</p>
+                    <p>8 (029) 556 40 29</p>
+                </div>
+            </div>
+            <div class="header__mobile-menu">
+                <div class="header__mobile-login">Войти</div>
+                <div class="header__menu-button">
+                    <img class="header__menu-button-img" src="img/menu-button.svg">
+                    <div class="tray">
+                        <div class="tray__logo">
+                            <img class="tray__logo-img" src="img/logo_ITEC-blue.svg">
+                        </div>
+                        <nav class="tray__nav">
+                            <div id="trayDropdown" class="tray__item">Курсы</div>
+                            <div class="tray__dropdown">
+                                <a class="tray__dropdown-item" href="#">Frontend</a>
+                                <a class="tray__dropdown-item" href="#">Backend</a>
+                                <a class="tray__dropdown-item" href="#">Data science</a>
+                                <a class="tray__dropdown-item" href="#">QA Engineer</a>
+                            </div>
+                            <a class="tray__item" href="#">Тест</a>
+                            <a class="tray__item" href="#">О нас</a>
+                            <a class="tray__item" href="#">IT-новости</a>
+                            <a class="tray__item" href="#">Контакты</a>
+                        </nav>
+                        <div class="tray__social">
+                            <div class="tray__social-wrapper">
+                                <img class="tray__social-img" src="img/vk2.svg">
+                            </div>
+                            <div class="tray__social-wrapper">
+                                <img class="tray__social-img" src="img/insta2.svg">
+                            </div>
+                            <div class="tray__social-wrapper">
+                                <img class="tray__social-img" src="img/mail2.svg">
+                            </div>
+                            <div class="tray__social-wrapper">
+                                <img class="tray__social-img" src="img/telegram2.svg">
+                            </div>
+                        </div>
+                        <div class="tray__phone">+375 (44) 556 40 28</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="form-bg">
+        <div class="authorisation-form login-form">
+            <div class="authorisation-form__container">
+                <div class="authorisation-form__title">Войти</div>
+                <div class="authorisation-form__img-wrapper">
+                    <img src="img/login-icon.png" class="authorisation-form__img">
+                </div>
+                <form action="" method="GET">
+                    <fieldset class="authorisation-form__wrapper login__input">
+                        <legend>Логин</legend>
+                        <input class="authorisation-form__input" type="text">
+                    </fieldset>
+                    <fieldset class="authorisation-form__wrapper password__input">
+                        <legend>Пароль</legend>
+                        <input class="authorisation-form__input" type="password">
+                    </fieldset>
+                    <div class="authorisation-form__buttons">
+                        <div id="registrationForm" class="registration-wrapper">
+                            <div class="authorisation-form__registration">Регистрация</div>
+                        </div>
+                        <button class="authorisation-form__login">Войти</button>
+                    </div>
+                </form>
+                <div class="authorisation-form__remind">Забыли пароль?</div>
+                <div class="authorisation-form__social">
+                    <div class="authorisation-form__social-title">Войти с помощью:</div>
+                    <form class="authorisation-form__social-icons">
+                        <button class="authorisation-form__social-icon">
+                            <img src="img/vk1.svg" class="authorisation-form__icon-img">
+                        </button>
+                        <button class="authorisation-form__social-icon">
+                            <img src="img/fb.svg" class="authorisation-form__icon-img">
+                        </button>
+                        <button class="authorisation-form__social-icon">
+                            <img src="img/google.svg" class="authorisation-form__icon-img">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="registration-form authorisation-form">
+            <div class="authorisation-form__title">Регистрация</div>
+            <form action="" method="POST">
+                <fieldset class="authorisation-form__wrapper">
+                    <legend>Имя пользователя</legend>
+                    <input class="registrarion-form__input" type="text">
+                </fieldset>
+                <fieldset class="authorisation-form__wrapper">
+                    <legend>Логин</legend>
+                    <input class="registrarion-form__input" type="text">
+                </fieldset>
+                <fieldset class="authorisation-form__wrapper">
+                    <legend>Пароль</legend>
+                    <input class="registrarion-form__input" type="password">
+                </fieldset>
+                <fieldset class="authorisation-form__wrapper">
+                    <legend>Подтвердите пароль</legend>
+                    <input class="registrarion-form__input" type="password">
+                </fieldset>
+                <fieldset class="authorisation-form__wrapper">
+                    <legend>Email</legend>
+                    <input class="registrarion-form__input" type="email">
+                </fieldset>
+                <div class="registration-form__button-wrapper">
+                    <button class="registration-form__button">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Общий блок -->
+    <div class="course__container">
+        <!-- Заглавие -->
+        <h1 class="course__title">
+            Выберите формат обучения
+        </h1>
+        <!-- Блок с Форматов обучения -->
+        <div class="course__format">
+            <!-- Блок Формата онлайн -->
+            <a href="#" class="course__link">
+                <div class="course__format-name">
+                    <div class="course__name-wrapper">
+                        <h2 class="course__name">
+                            Онлайн-курсы
+                        </h2>
+                    </div>
+                    <div class="course__img-wrapper">
+                        <img src="img/online_format.svg" alt="онлайн" class="course__online-img">
+                    </div>
+                    <p class="course__text"><span class="course__text-weigth">
+                            Не нужно
+                        </span>
+                        тратить время на поездку в школу и обратно.
+                    </p>
+                    <p class="course__text"><span class="course__text-weigth">
+                            Нет
+                        </span>
+                        географических ограничений при выборе обучения.
+                    </p>
+                    <p class="course__text">
+                        <span class="course__text-weigth">
+                            Возможность
+                        </span>
+                        познакомиться с новыми технологиями
+                        и практиковать использование офисного программного обеспечения, интернета.
+                    </p>
+                </div>
+            </a>
+            <!-- Блок Формата оффлайн -->
+            <a href="#" class="course__link">
+                <div class="course__format-name">
+                    <div class="course__name-wrapper">
+                        <h2 class="course__name">
+                            Оффлайн-курсы
+                        </h2>
+                    </div>
+                    <div class="course__img-wrapper">
+                        <img src="img/offline_format.svg" alt="онлайн" class="course__offline-img">
+                    </div>
+                    <p class="course__text">
+                        <span class="course__text-weigth">
+                            Коротко
+                        </span>
+                        перечислить преимущества офлайн обучения: имеющееся оборудование и т.п.
+                    </p>
+                </div>
+            </a>
+            <!-- Блок Формата видеокурс -->
+            <a href="#" class="course__link">
+                <div class="course__format-name">
+                    <div class="course__name-wrapper">
+                        <h2 class="course__name">
+                            Онлайн-курсы
+                        </h2>
+                    </div>
+                    <div class="course__img-wrapper">
+                        <img src="img/video_format.svg" alt="онлайн" class="course__video-img">
+                    </div>
+                    <p class="course__text"><span class="course__text-weigth">
+                            Стоимость
+                        </span>
+                        видеокурсов наже, чем у курсов другого формата обучения
+                    </p>
+                    <p class="course__text"><span class="course__text-weigth">
+                            Нет ограничений
+                        </span>
+                        в графике обучения. Вы можете учиться в своем темпе и делать это в удобное для себя время.
+                    </p>
+                    <p class="course__text">
+                        <span class="course__text-weigth">
+                            Обратная связь
+                        </span>
+                        возможность с преподавателями. На все возникшие у Вас вопросы, будут даны исчерпывающие ответы.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <section class="contacts">
+        <div class="contacts__wrapper">
+            <div class="contacts__form">
+                <span class="contacts__header">ОСТАЛИСЬ ВОПРОСЫ?</span>
+                <br>
+                <span class="contacts__text">Пишите или звоните</span>
+                <div class="contacts__number">
+                    <span class="contacts__title">Телефон:</span>
+                    <div>
+                        <span>+375 (44) 559 87 14</span>
+                        <span>+375 (25) 559 87 15</span>
+                    </div>
+                </div>
+                <div class="contacts__email">
+                    <span class="contacts__title">E-mail:</span>
+                    <div>
+                        <span>itec.complex@mail.ru</span>
+                    </div>
+                </div>
+                <div class="contacts__telegram">
+                    <span class="contacts__title">Telegram:</span>
+                    <div>
+                        <span>@iteccomplex</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <form class="footer__form">
+                <div class="footer__title">Бесплатная индивидуальная консультация:</div>
+                <p class="footer__input-number">
+                    <input class="footer__input" type="tel" name="telephone" placeholder="+375 ( - - )  ---  --  --" />
+                </p>
+                <p class="footer__input-name">
+                    <input class="footer__input" type="text" name="name" placeholder="ИМЯ" />
+                </p>
+                <p class="footer__input-button">
+                    <input class="footer__button" type="submit" value="Получить консультацию" />
+                </p>
+            </form>
+            <div class="footer__nav">
+                <div class="footer__container">
+                    <div class="footer__nav-title">О нас</div>
+                    <a href="#" class="footer__nav-link">Наша команда</a>
+                    <a href="#" class="footer__nav-link">Наш блог</a>
+                    <a href="#" class="footer__nav-link">Наши проекты</a>
+                </div>
+                <div class="footer__container">
+                    <div class="footer__nav-title">Курсы</div>
+                    <a href="#" class="footer__nav-link">Backend</a>
+                    <a href="#" class="footer__nav-link">Frontend</a>
+                    <a href="#" class="footer__nav-link">QA Engineer</a>
+                </div>
+                <div class="footer__container">
+                    <div class="footer__nav-title">Помощь</div>
+                    <a href="#" class="footer__nav-link">Тест на <br> IT-специальность</a>
+                    <a href="#" class="footer__nav-link">Вакансии</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__wrapper_second">
+            <div class="footer__logo">
+                <img class="footer__logo-img" src="img/logo_ITEC-blue.svg">
+            </div>
+            <div class="footer__address">
+                <div class="footer__address-place">г. Минск, ул. Кирова 10</div>
+                <a class="footer__address-show">Посмотреть на карте</a>
+                <div class="footer__phone">+375 (29) 193-95-77</div>
+                <div class="footer__phone">+375 (29) 193-95-78</div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom">ITEC education company. Все права защищены 2020</div>
+    <script src="./js/header.js"></script>
+</body>
+
+</html>

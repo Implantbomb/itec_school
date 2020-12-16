@@ -1,0 +1,485 @@
+
+.about{
+    width:100%;  
+    margin-top: 140px;
+}
+
+.about__wrapper{
+    width: 1140px;
+    margin: 0 auto;
+    font-family: Montserrat-Regular;
+    padding: 0;
+}
+
+.about__form{
+    width: 640px;
+    margin-left: 105px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about__form__block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about__form span{
+    display: block;
+}
+
+.about__form__wrapper{
+    width: 100%;
+}
+
+.about__form__a1,
+.about__form__email,
+.about__form__mts,
+.about__form__telegram{
+    width: 50%;
+}
+
+.about__form__a1, .about__form__email{
+    margin-bottom: 8px;
+}
+
+
+.about__title__small{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+    color: #D5A809;
+}
+
+.about__title__big{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #D5A809;
+}
+
+.about__description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #4A3D0D;
+    font-family: Montserrat-Medium;
+}
+
+.about__form__wrapper{
+    margin-bottom: 35px;
+}
+
+.about__form__address span:first-child{
+    margin-right: 8px;
+}
+
+.about__form__a1 span:first-child{
+    margin-right: 42px;
+}
+
+.about__form__mts span:first-child{
+    margin-right: 20px;
+}
+
+.about__form__email span:first-child{
+    margin-right: 45px;
+}
+
+.about__form__telegram span:first-child{
+    margin-right: 19px;
+}
+
+/*
+       map
+ */
+
+.about__map{
+    margin-top: 45px;
+    height: 674px;
+    padding: 0;
+}
+
+
+
+/*
+       media
+ */
+@media (max-width: 1199px) {
+    .about{
+        margin-top: 100px;
+    }
+
+    .about__wrapper{
+        width: 960px;
+    }
+
+    .about__form{
+        width:770px;
+        margin-left: 47px;
+    }
+
+    .about__form__block{
+        display: block;
+    }
+
+    .about__form__a1{
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .about__form__a1:before{
+        content: 'Телефон';
+        position: absolute;
+        top: -33px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #C89E08;
+        font-family: Montserrat-Light;
+    }
+
+    .about__form__wrapper,
+    .about__form__a1,
+    .about__form__email,
+    .about__form__mts,
+    .about__form__telegram{
+        width: 50%;
+    }
+
+    .about__form__wrapper{
+        order: 1;
+    }
+    .about__form__email{
+        order: 2;
+    }
+    .about__form__a1{
+        order: 3;
+    }
+    .about__form__telegram{
+        order: 4;
+    }
+    .about__form__mts{
+        order: 5;
+    }
+
+    .about__form__wrapper{
+        margin-bottom: 77px;
+    }
+
+    .about__title__small,
+    .about__title__big{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #C89E08;
+        font-family: Montserrat-Light;
+    }
+
+    .about__form__mts,
+    .about__form__a1{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+    }
+
+
+    .about__form__mts span,
+    .about__form__a1 span{
+        color: #554200;
+    }
+
+    .about__description{
+        font-family: Montserrat-Medium;
+        font-size: 20px;
+        line-height: 24px;
+        color: #554200;
+    }
+
+    .about__form__email,
+    .about__form__telegram{
+        padding-left: 155px;
+    }
+
+    .about__form__address span:first-child{
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .about__form__a1 span:first-child{
+        margin-right: 55px;
+    }
+
+    .about__form__mts span:first-child{
+        margin-right: 37px;
+    }
+
+    .about__form__email span:first-child{
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .about__form__telegram span:first-child{
+        display: none;
+    }
+    .about__form__telegram{
+        position: relative;
+    }
+
+    .about__form__telegram:before{
+        content: 'Telegram:';
+        position: absolute;
+        top: -33px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #C89E08;
+        font-family: Montserrat-Light;
+    }
+
+    .about__form__mts span:first-child,
+    .about__form__a1 span:first-child{
+        font-family: Montserrat-Regular;
+    }
+
+    /*
+           map
+     */
+
+    .about__map{
+        margin-top: 55px;
+        height: 343px;
+    }
+}
+
+@media (max-width: 991px) {
+    .about{
+        margin-top: 85px;
+    }
+
+    .about__wrapper{
+        width: 720px;
+    }
+
+    .about__form{
+        width:450px;
+        margin-left: 43px;
+    }
+
+    .about__form__wrapper,
+    .about__form__a1,
+    .about__form__email,
+    .about__form__mts,
+    .about__form__telegram{
+        width: 100%;
+    }
+
+    .about__form__wrapper{
+        order: 1;
+    }
+    .about__form__a1{
+        order: 2;
+        margin-bottom: 13px;
+    }
+    .about__form__mts{
+        order: 3;
+    }
+    .about__form__email{
+        order: 4;
+    }
+    .about__form__telegram{
+        order: 5;
+    }
+
+    .about__form__email,
+    .about__form__telegram{
+        padding-left: 0;
+    }
+
+    .about__form__email,
+    .about__form__telegram{
+        margin-top: 45px;
+    }
+
+    .about__form__address span:first-child,
+    .about__form__email span:first-child,
+    .about__form__telegram span:first-child{
+        margin-bottom: 15px;
+    }
+
+    .about__form__a1:before{
+        top: -35px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .about__title__small,
+    .about__title__big{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .about__description{
+        line-height: 24px;
+        font-size: 25px;
+    }
+
+    .about__form__a1 span:first-child{
+        margin-right: 63px;
+    }
+
+    .about__form__mts span:first-child{
+        margin-right: 40px;
+    }
+
+    .about__form__telegram span:first-child{
+        display: block;
+    }
+
+    .about__form__telegram:before{
+        content: none;
+    }
+
+    /*
+    /////////////////
+    /////////////////
+    /////////////////
+           map
+    /////////////////
+    /////////////////
+    /////////////////
+     */
+
+    .about__map{
+        margin-top: 80px;
+        height: 304px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about__wrapper{
+        width: 540px;
+    }
+
+    .about__form{
+        width:440px;
+        margin-left: 20px;
+    }
+
+    .about__form__address span:first-child,
+    .about__form__email span:first-child,
+    .about__form__telegram span:first-child{
+        margin-bottom: 15px;
+    }
+
+    .about__form__a1:before{
+        top: -35px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .about__title__small,
+    .about__title__big{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .about__description{
+        line-height: 24px;
+        font-size: 25px;
+    }
+
+    .about__form__a1 span:first-child{
+        margin-right: 63px;
+    }
+
+    .about__form__mts span:first-child{
+        margin-right: 40px;
+    }
+
+    /*
+           map
+     */
+
+    .about__map{
+        margin-top: 48px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 575px) {
+    .about{
+        margin-top: 80px;
+    }
+
+    .about__wrapper{
+        width: 100%;
+    }
+
+    .about__form{
+        width: auto;
+        margin-left: 15px;
+        padding-right: 15px;
+    }
+
+    .about__form__address span:first-child,
+    .about__form__email span:first-child,
+    .about__form__telegram span:first-child{
+        margin-bottom: 5px;
+    }
+
+    .about__form__a1:before{
+        top: -25px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .about__title__small,
+    .about__title__big{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .about__description{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .about__form__a1 span:first-child{
+        margin-right: 36px;
+    }
+
+    .about__form__mts span:first-child{
+        margin-right: 18px;
+    }
+
+    .about__form__email, .about__form__telegram {
+        margin-top: 35px;
+    }
+
+
+
+
+
+    .about__form__wrapper {
+        margin-bottom: 55px;
+    }
+    /*
+           map
+     */
+
+    .about__map{
+        margin-top: 34px;
+        height: 260px;
+    }
+}
+

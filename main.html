@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITEC главная</title>
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__wrapper">
+                <a class="header__logo" href="main.html">
+                    <img class="header__logo-img" src="img/logo_ITEC.svg">
+                </a>
+                <a class="header__login" href = "login-form.html">Войти</a>
+            </div>
+            <div class="header__menu">
+                <a class="header__menu-item" href="courses.html">Курсы</a>
+                <a class="header__menu-item" href="#">Тест</a>
+                <a class="header__menu-item" href="#">О нас</a>
+                <a class="header__menu-item" href="it-news.html">IT-новости</a>
+                <a class="header__menu-item" href="contacts.html">Контакты</a>
+            </div>
+            <div class="header__contact">
+                <div class="header__contact-text">
+                    <p>Не жди лучшего времени!</p>
+                    <p>Звони прямо сейчас!</p>
+                </div>
+                <div class="header__contact-number">
+                    <p>8 (029) 556 40 29</p>
+                    <p>8 (029) 556 40 29</p>
+                </div>
+            </div>
+            <div class="header__mobile-menu">
+                <div class="header__mobile-login">Войти</div>
+                <div class="header__menu-button">
+                    <img class="header__menu-button-img" src="img/menu-button.svg">
+                    <div class = "tray-bg">
+                        <div class="tray">
+                            <div class="tray__logo">
+                                <img class="tray__logo-img" src="img/logo_ITEC-blue.svg">
+                            </div>
+                            <nav class="tray__nav">
+                                <div id="trayDropdown" class="tray__item">Курсы</div>
+                                <div class="tray__dropdown">
+                                    <a class="tray__dropdown-item" href="#">Онлайн-обучение</a>
+                                    <a class="tray__dropdown-item" href="#">Офлайн-обучение</a>
+                                    <a class="tray__dropdown-item" href="#">Видеокурс</a>
+                                </div>
+                                <a class="tray__item" href="#">Тест</a>
+                                <a class="tray__item" href="#">О нас</a>
+                                <a class="tray__item" href="it-news.html">IT-новости</a>
+                                <a class="tray__item" href="contacts.html">Контакты</a>
+                            </nav>
+                            <div class="tray__social">
+                                <div class="tray__social-wrapper">
+                                    <img class="tray__social-img" src="img/vk2.svg">
+                                </div>
+                                <div class="tray__social-wrapper">
+                                    <img class="tray__social-img" src="img/insta2.svg">
+                                </div>
+                                <div class="tray__social-wrapper">
+                                    <img class="tray__social-img" src="img/mail2.svg">
+                                </div>
+                                <div class="tray__social-wrapper">
+                                    <img class="tray__social-img" src="img/telegram2.svg">
+                                </div>
+                            </div>
+                            <div class="tray__phone">+375 (44) 556 40 28</div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class = "form-bg">
+        <div class = "authorisation-form login-form">
+            <div class = "authorisation-form__container">
+                <div class = "authorisation-form__title">Войти</div>
+                <div class = "authorisation-form__img-wrapper">
+                    <img src = "img/login-icon.png" class = "authorisation-form__img">
+                </div>
+                <form action = "" method = "GET">
+                    <fieldset class = "authorisation-form__wrapper login__input">
+                        <legend>Логин</legend>
+                        <input class = "authorisation-form__input" type = "text">
+                    </fieldset>
+                    <fieldset class = "authorisation-form__wrapper password__input">
+                        <legend>Пароль</legend>
+                        <input class = "authorisation-form__input" type = "password">
+                    </fieldset>
+                    <div class = "authorisation-form__buttons">
+                        <div id = "registrationForm" class = "registration-wrapper">
+                            <div class = "authorisation-form__registration">Регистрация</div>
+                        </div>
+                        <button class = "authorisation-form__login">Войти</button>
+                    </div>
+                </form>    
+                <div class = "authorisation-form__remind">Забыли пароль?</div>
+                <div class = "authorisation-form__social">
+                    <div class = "authorisation-form__social-title">Войти с помощью:</div>
+                    <form class = "authorisation-form__social-icons">
+                        <button class = "authorisation-form__social-icon">
+                            <img src = "img/vk1.svg" class = "authorisation-form__icon-img">
+                        </button>
+                        <button class = "authorisation-form__social-icon">
+                            <img src = "img/fb.svg" class = "authorisation-form__icon-img">
+                        </button>
+                        <button class = "authorisation-form__social-icon">
+                            <img src = "img/google.svg" class = "authorisation-form__icon-img">
+                        </button>
+                    </form>
+                </div>
+            </div>    
+        </div>
+        <div class = "registration-form authorisation-form">
+            <div class = "authorisation-form__title">Регистрация</div>
+            <form action = "" method = "POST">
+                <fieldset class = "authorisation-form__wrapper">
+                    <legend>Имя пользователя</legend>
+                    <input class = "registrarion-form__input" type = "text">
+                </fieldset>
+                <fieldset class = "authorisation-form__wrapper">
+                    <legend>Логин</legend>
+                    <input class = "registrarion-form__input" type = "text">
+                </fieldset>
+                <fieldset class = "authorisation-form__wrapper">
+                    <legend>Пароль</legend>
+                    <input class = "registrarion-form__input" type = "password">
+                </fieldset>
+                <fieldset class = "authorisation-form__wrapper">
+                    <legend>Подтвердите пароль</legend>
+                    <input class = "registrarion-form__input" type = "password">
+                </fieldset>
+                <fieldset class = "authorisation-form__wrapper">
+                    <legend>Email</legend>
+                    <input class = "registrarion-form__input" type = "email">
+                </fieldset>
+                <div class = "registration-form__button-wrapper">
+                    <button class = "registration-form__button">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    </div>    
+    <div class="dark-bg">
+        <div class="request">
+            <div class = "request__container">
+                <div class="request__title">Оставьте заявку <br> и мы свяжемся с Вами!</div>
+                <form class="request__form" action="" method="POST">
+                    <div class="request__wrapper">
+                        <input class="request__input" type="text" placeholder="Имя">
+                    </div>
+                    <div class="request__wrapper">
+                        <input class="request__input" type="email" placeholder="E-mail">
+                    </div>
+                    <div class="request__wrapper">
+                        <input class="request__input" type="text" placeholder="+375 ( - - )  ---  --  --">
+                    </div>
+                    <div id="requestSelector" class="request__wrapper">
+                        <input id="requestDirection" class="request__input" type="text" disabled value="Frontend">
+                    </div>
+                    <button class="request__button">Записаться на курс</button>
+                </form>
+                <div class="request__selector">
+                    <div class="request__selector-item">Frontend</div>
+                    <div class="request__line"></div>
+                    <div class="request__selector-item">Backend</div>
+                    <div class="request__line"></div>
+                    <div class="request__selector-item">QA Engineer</div>
+                    <div class="request__line"></div>
+                    <div class="request__selector-item">Data science</div>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <main class="main">
+        <div class="info">
+            <div class="info__wrapper">
+                <div class="info__contacts">
+                    <div class="header__contact-mobile">
+                        <div class="header__contact-text">
+                            <p>Не жди лучшего времени!</p>
+                            <p>Звони прямо сейчас!</p>
+                        </div>
+                        <div class="header__contact-number">
+                            <p>8 (029) 556 40 29</p>
+                            <p>8 (029) 556 40 29</p>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="info__title">IT-курсы программирования</h1>
+                <div class="info__study">
+                    Мы предоставляем обучение<br />
+                    по следующим направлениям:
+                </div>
+                <div class="info__directions">
+                    <div class="info__direction">Web-разработка</div>
+                    <div class="info__point"></div>
+                    <div class="info__direction">Data science</div>
+                    <div class="info__point"></div>
+                    <div class="info__direction">QA Engineer (тестировщик)</div>
+                    <img class="info__coding-img__mobile" src="img/coding-mobile.svg">
+                </div>
+                <div class="info__text">Самый лучший день что-то изменить - СЕГОДНЯ!</div>
+                <div id="requestButton" class="info__button">Записаться на курс</div>
+                <div class="info__address">
+                    <p>г. Минск ул. Кирова 8</p>
+                    <div class="info__social">
+                        <a class="info__social-icon" href="#">
+                            <img class="info__social-icon-img" src="img/Vk.svg">
+                        </a>
+                        <a class="info__social-icon" href="#">
+                            <img class="info__social-icon-img" src="img/insta.svg">
+                        </a>
+                        <a class="info__social-icon" href="#">
+                            <img class="info__social-icon-img" src="img/mail.svg">
+                        </a>
+                        <a class="info__social-icon" href="#">
+                            <img class="info__social-icon-img" src="img/telegram.svg">
+                        </a>
+                    </div>
+                </div>
+                <img class="info__coding-img" src="img/coding_2.svg" />
+            </div>
+        </div>
+        <!-- test-button block -->
+        <div class="info__test-tablet">
+            <div class="info__test-tablet__title">Не можете определиться с выбором?</div>
+            <div class="info__test-tablet__title">Мы поможем!</div>
+            <div class="info__test-tablet__text">Пройдите простой тест, чтобы мы могли подобрать курс, подходящий именно
+                ВАМ!</div>
+            <a href="#" class="info__test-tablet__link">
+                Начать тест!
+            </a>
+        </div>
+        <!-- about block -->
+        <div class="about">
+            <div class="about__line"></div>
+            <h2 class="about__title">
+                ITEC – правильный выбор!
+            </h2>
+            <div class="about__first-container">
+                <div class="about__text">
+                    Мы хотим помочь тем, кто решил начать карьеру<br>
+                    в сфере информационных технологий. Основная цель нашей программы – подготовить специалистов, которые
+                    действительно будут востребованы<br>
+                    и полезны для работодателей.
+                </div>
+            </div>
+            <div class="about__second-container">
+                <div class="about__container-img">
+                    <img src="img/Frame3.svg" alt="" class="about-img">
+                </div>
+                <div class="about__text about__text-width">
+                    Мы хорошо знаем, что нельзя стать программистом<br>
+                    за несколько дней, чтобы не обещали другие курсы.<br>
+                    Наша задача заключается в том, чтобы все обучающиеся узнали и поняли основы.
+                    Чтобы у каждого была твёрдая база, с которой он смог бы развиваться как специалист.
+                    Уверены, что только такой подход поможет построить успешную карьеру в IT.
+                </div>
+            </div>
+        </div>
+        <!-- videocourses block -->
+        <div class="format">
+            <div class="format__wrapper">
+                <div class="format__title">
+                    У нас есть <span class = "format__title-three">ТРИ</span><span class = "format__title-3">3</span> формата обучения
+                </div>
+                <div class="format__subtitle">
+                    Учитесь так, как ВАМ удобно!
+                </div>
+                <div class="format__blocks">
+                    <div class="format__block-wrapper">
+                        <a class="format__block" href="#">
+                            <div class="format__img-wrapper">
+                                <img class="checkmark" src="img/checkmark.svg">
+                            </div>
+                            <div class="format__text">Онлайн</div>
+                        </a>
+                        <a class="format__all-courses" href="#">Смотреть все курсы</a>
+                    </div>
+                    <div class="format__block-wrapper">
+                        <a class="format__block" href="#">
+                            <div class="format__img-wrapper">
+                                <img class="checkmark" src="img/checkmark.svg">
+                            </div>
+                            <div class="format__text">Офлайн</div>
+                        </a>
+                        <a class="format__all-courses" href="#">Смотреть все курсы</a>
+                    </div>
+                    <div class="format__block-wrapper">
+                        <a class="format__block" href="#">
+                            <div class="format__img-wrapper">
+                                <img class="checkmark" src="img/checkmark.svg">
+                            </div>
+                            <div class="format__text">Видеокурс</div>
+                        </a>
+                        <a class="format__all-courses" href="#">Смотреть все курсы</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- advantages -->
+        <div class="advantages">
+            <h2 class="advantages__block-name">Выбирая нас, вы получаете</h2>
+            <div class="advantages__container">
+                <div class="advantages_block">
+                    <div class="advantages__advantage">
+                        <img src="img/advantage.svg" alt="преимущество"
+                            class="advantages__advantage-img advantages__advantage-img1" />
+                        <p class="advantages__advantage-description advantages__advantage-description_w1">Доступ ко всем
+                            учебным видео</p>
+                    </div>
+                    <div class="advantages__advantage">
+                        <img src="img/advantage1.svg" alt="преимущество"
+                            class="advantages__advantage-img advantages__advantage-img_m-b advantages__advantage-img2" />
+                        <p class="advantages__advantage-description advantages__advantage-description_w2">Гибкая оплата
+                            курсов</p>
+                    </div>
+                </div>
+                <div class="advantages__line"></div>
+                <div class="advantages_block">
+                    <div class="advantages__advantage">
+                        <img src="img/advantage3.svg" alt="преимущество"
+                            class="advantages__advantage-img advantages__advantage-img4" />
+                        <p class="advantages__advantage-description advantages__advantage-description_w4">Мы учим на
+                            реальных проектах</p>
+                    </div>
+                    <div class="advantages__advantage">
+                        <img src="img/advantage2.svg" alt="преимущество"
+                            class="advantages__advantage-img advantages__advantage-img3 advantages__advantage-img_m-b" />
+                        <p class="advantages__advantage-description advantages__advantage-description_w3">Интересные
+                            бонусы :)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="advantages-mob">
+            <h2 class="advantages__block-name">Выбирая нас, вы получаете:</h2>
+            <div class="advantages-mob__advantages">
+                <div class="advantages-mob_advantage">
+                    <img src="img/adv-arrow.svg" alt="галочка" class="advantages-mob__advantage-img" />
+                    <p class="advantages-mob__description">Доступ ко всем учебным видео</p>
+                </div>
+
+                <div class="advantages-mob_advantage">
+                    <img src="img/adv-arrow.svg" alt="галочка" class="advantages-mob__advantage-img" />
+                    <p class="advantages-mob__description">Мы учим на реальных проектах</p>
+                </div>
+
+                <div class="advantages-mob_advantage">
+                    <img src="img/adv-arrow.svg" alt="галочка" class="advantages-mob__advantage-img" />
+                    <p class="advantages-mob__description">Гибкая оплата курсов</p>
+                </div>
+
+                <div class="advantages-mob_advantage">
+                    <img src="img/adv-arrow.svg" alt="галочка" class="advantages-mob__advantage-img" />
+                    <p class="advantages-mob__description">Интересные бонусы :)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="steps">
+            <img src="img/HTML.svg" alt="html" class="steps__img-html" />
+            <div class="steps__steps-name-container">
+                <div class="steps__line"></div>
+                <h2 class="steps__name">Путь к Вашей мечте</h2>
+            </div>
+            <div class="steps__container">
+                <div class="steps__step-block steps__step-block_w">
+                    <p class="steps__step-number">1</p>
+                    <p class="steps__step-description steps__step-description_w">Старт. Выбор нашей школы</p>
+                    <img src="img/step1.svg" alt="шаг" class="steps__step-img steps__step-img_s1" />
+                </div>
+
+                <div class="steps__step-block steps__step-block_w1">
+                    <p class="steps__step-number">2</p>
+                    <p class="steps__step-description steps__step-description_w1">Обучение. Получение знаний<br> 
+                        и возможность их практического применения</p>
+                    <img src="img/step2.svg" alt="шаг" class="steps__step-img steps__step-img_s2" />
+                </div>
+
+                <div class="steps__step-block steps__step-block_w2">
+                    <p class="steps__step-number">3</p>
+                    <p class="steps__step-description steps__step-description_w2">Результат. Востребованная и
+                        высокооплачиваемая специальность</p>
+                    <img src="img/step3.svg" alt="шаг" class="steps__step-img steps__step-img_s3" />
+                </div>
+            </div>
+        </div>
+
+        <div class="immediate-courses">
+            <h2 class="immediate-courses__name">Ближайшие курсы</h2>
+
+            <div class="immediate-courses__container">
+                <div class="immediate-courses__course">
+                    <p class="immediate-courses__course-name">FRONTEND</p>
+                    <p class="immediate-courses__start">Старт 15 сентября</p>
+                    <p class="immediate-courses__more-container">
+                        <a href="#" class="immediate-courses__more">Подробнее</a>
+                    </p>
+                    <div class="immediate-courses__img-container">
+                        <img src="img/course.svg" alt="курс" class="immediate-courses__img" />
+                    </div>
+                </div>
+
+                <div class="immediate-courses__course">
+                    <p class="immediate-courses__course-name">BACKEND</p>
+                    <p class="immediate-courses__start">Старт 15 сентября</p>
+                    <p class="immediate-courses__more-container">
+                        <a href="#" class="immediate-courses__more">Подробнее</a>
+                    </p>
+                    <div class="immediate-courses__img-container">
+                        <img src="img/course.svg" alt="курс" class="immediate-courses__img" />
+                    </div>
+                </div>
+
+                <div class="immediate-courses__course">
+                    <p class="immediate-courses__course-name">QA ENGINEER</p>
+                    <p class="immediate-courses__start">Старт 15 сентября</p>
+                    <p class="immediate-courses__more-container">
+                        <a href="#" class="immediate-courses__more">Подробнее</a>
+                    </p>
+                    <div class="immediate-courses__img-container">
+                        <img src="img/course.svg" alt="курс" class="immediate-courses__img" />
+                    </div>
+                </div>
+            </div>
+            <div class="immediate-courses__slider">
+                <div>
+                    <div class="immediate-courses__course">
+                        <p class="immediate-courses__course-name">FRONTEND</p>
+                        <p class="immediate-courses__start">Старт 15 сентября</p>
+                        <p class="immediate-courses__more-container">
+                            <a href="#" class="immediate-courses__more">Подробнее</a>
+                        </p>
+                        <div class="immediate-courses__img-container">
+                            <img src="img/course.svg" alt="курс" class="immediate-courses__img" />
+                        </div>
+                    </div>
+                </div>  
+
+                <div>
+                    <div class="immediate-courses__course">
+                        <p class="immediate-courses__course-name">BACKEND</p>
+                        <p class="immediate-courses__start">Старт 15 сентября</p>
+                        <p class="immediate-courses__more-container">
+                            <a href="#" class="immediate-courses__more">Подробнее</a>
+                        </p>
+                        <div class="immediate-courses__img-container">
+                            <img src="img/course.svg" alt="курс" class="immediate-courses__img" />
+                        </div>
+                    </div>
+                </div>    
+
+                <div>
+                    <div class="immediate-courses__course">
+                        <p class="immediate-courses__course-name">QA ENGINEER</p>
+                        <p class="immediate-courses__start">Старт 15 сентября</p>
+                        <p class="immediate-courses__more-container">
+                            <a href="#" class="immediate-courses__more">Подробнее</a>
+                        </p>
+                        <div class="immediate-courses__img-container">
+                            <img src="img/course.svg" alt="курс" class="immediate-courses__img" />
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <p class="immediate-courses__all-courses-container"><a href="#"
+                    class="immediate-courses__all-courses">Посмотреть все курсы</a></p>
+        </div>
+
+        <div class="graduation-projects">
+            <div class="graduation-projects__line"></div>
+            <img src="img/Java.svg" alt="java" class="graduation-projects__java-img" />
+            <img src="img/Java1.svg" alt="java" class="graduation-projects__java-img1" />
+
+            <h2 class="graduation-projects__name">Дипломные проекты наших студентов</h2>
+            <div class="graduation-projects__projects-container">
+                <img src="img/team_presentation.svg" alt="презентация" class="graduation-projects__img" />
+
+                <div class="graduation-projects__carousel-wrapper">
+                    <!-- cлайдер -->
+                    <div class="slider__container">
+                        <img src="img/left.svg" alt="left" class="slider__control slider__control_left" />
+                        <div class="slider-dekst">
+                            <div class="slider__wrapper">
+                                <div class="slider__item">
+                                    <a href="" class="slider__link">
+                                        <img src="img/Rectangle.png" alt="student" class="slider__img" />
+                                        <p class="slider__project-description">“Такой сякой на основе всякого для этого”
+                                        </p>
+                                        <p class="slider__project-teacher">Яна Машкова</p>
+                                        <div class="slider__teacher-container">
+                                            <p class="slider__project-teacher slider__project-teacher_f">Преподаватель:
+                                            </p>
+                                            <p class="slider__teacher-name">Иван Смирнов</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="slider__item">
+                                    <a href="" class="slider__link">
+                                        <img src="img/Rectangle.png" alt="student" class="slider__img" />
+                                        <p class="slider__project-description">Проект такой сякой на основе всякого</p>
+                                        <p class="slider__project-teacher">Яна Машкова</p>
+                                        <div class="slider__teacher-container">
+                                            <p class="slider__project-teacher slider__project-teacher_f">Преподаватель:
+                                            </p>
+                                            <p class="slider__teacher-name">Иван Смирнов</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="slider__item">
+                                    <a href="" class="slider__link">
+                                        <img src="img/Rectangle.png" alt="student" class="slider__img" />
+                                        <p class="slider__project-description">“Такой сякой на основе всякого для этого”
+                                        </p>
+                                        <p class="slider__project-teacher">Яна Машкова</p>
+                                        <div class="slider__teacher-container">
+                                            <p class="slider__project-teacher slider__project-teacher_f">Преподаватель:
+                                            </p>
+                                            <p class="slider__teacher-name">Иван Смирнов</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="slider__item">
+                                    <a href="" class="slider__link">
+                                        <img src="img/Rectangle.png" alt="student" class="slider__img" />
+                                        <p class="slider__project-description">Проект такой сякой</p>
+                                        <p class="slider__project-teacher">Яна Машкова</p>
+                                        <div class="slider__teacher-container">
+                                            <p class="slider__project-teacher slider__project-teacher_f">Преподаватель:
+                                            </p>
+                                            <p class="slider__teacher-name">Иван Смирнов</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="slider__item">
+                                    <a href="" class="slider__link">
+                                        <img src="img/Rectangle.png" alt="student" class="slider__img" />
+                                        <p class="slider__project-description">Проект такой сякой</p>
+                                        <p class="slider__project-teacher">Яна Машкова</p>
+                                        <div class="slider__teacher-container">
+                                            <p class="slider__project-teacher slider__project-teacher_f">Преподаватель:
+                                            </p>
+                                            <p class="slider__teacher-name">Иван Смирнов</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="slider__item">
+                                    <a href="" class="slider__link">
+                                        <img src="img/Rectangle.png" alt="student" class="slider__img" />
+                                        <p class="slider__project-description">Проект такой сякой</p>
+                                        <p class="slider__project-teacher">Яна Машкова</p>
+                                        <div class="slider__teacher-container">
+                                            <p class="slider__project-teacher slider__project-teacher_f">Преподаватель:
+                                            </p>
+                                            <p class="slider__teacher-name">Иван Смирнов</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="slider__item">
+                                    <a href="" class="slider__link">
+                                        <img src="img/Rectangle.png" alt="student" class="slider__img" />
+                                        <p class="slider__project-description">Проект такой сякой</p>
+                                        <p class="slider__project-teacher">Яна Машкова</p>
+                                        <div class="slider__teacher-container">
+                                            <p class="slider__project-teacher slider__project-teacher_f">Преподаватель:
+                                            </p>
+                                            <p class="slider__teacher-name">Иван Смирнов</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <img src="img/right.svg" alt="right"
+                            class="slider__control slider__control_right slider__control_show" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="graduation-projects-mob">
+            <h2 class="graduation-projects__name">Дипломные проекты наших студентов</h2>
+
+            <div class="slider single-item">
+                <div>
+                    <img src="img/Rectangle.png" alt="student" class="slider__img-mob" />
+                    <p class="slider__project-description-mob">“Такой сякой на основе всякого для этого”</p>
+                    <p class="slider__project-teacher-mob">Яна Машкова</p>
+                </div>
+
+                <div>
+                    <img src="img/Rectangle.png" alt="student" class="slider__img-mob" />
+                    <p class="slider__project-description-mob">“Такой сякой на основе всякого для этого”</p>
+                    <p class="slider__project-teacher-mob">Яна Машкова</p>
+                </div>
+
+                <div>
+                    <img src="img/Rectangle.png" alt="student" class="slider__img-mob" />
+                    <p class="slider__project-description-mob">“Такой сякой на основе всякого для этого”</p>
+                    <p class="slider__project-teacher-mob">Яна Машкова</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <img src="img/arrow.svg" alt="стрелка" class="arrows__img" />
+            <img src="img/arrow.svg" alt="стрелка" class="arrows__img" />
+            <img src="img/arrow.svg" alt="стрелка" class="arrows__img" />
+        </div>
+
+        <!-- test -->
+
+        <section class="test">
+            <div class="test__wrapper">
+                <span class="test__first-text">Хотите также?</span>
+
+                <span class="test__second-text">Не знаете с чего начать?</span>
+
+                <h2 class="test__title">Не знаете какой курс выбрать?</h2>
+
+                <span class="test__text-helper">
+                    Для этого у нас разработан простой тест, который<br> 
+                    поможет в выборе предстоящей профессии!
+                </span>
+
+                <a href="#" class="test__start-test">Начать тест!</a>
+            </div>
+        </section>
+
+        <section class="our-teachers">
+            <div class="our-teachers__wrapper">
+                <h2 class="our-teachers__wrapper__title">Наши преподаватели</h2>
+
+                <p class="our-teachers__text">
+                    Команда состоит из эксперт-преподавателей, имеющих опыт работы в крупных известных компаниях, таких
+                    как EPAM, IBA Group, Wargamming, Itransition, BELHARD, ISsoft, Exadel, SoftClub, iTechArt Group,
+                    ScienceSoft и др.
+                </p>
+
+                <div class="our-teachers__block">
+                    <div class="our-teachers__teacher our-teachers__first-teacher">
+                        <img class="our-teachers__photo" src="img/teacher1.jpg" alt="teacher" />
+
+                        <span class="our-teachers__name">Роман Градиент</span>
+
+                        <span class="our-teachers__profession">Front End developer</span>
+
+                        <span class="our-teachers__experience">3 года опыта</span>
+                    </div>
+
+                    <div class="our-teachers__teacher our-teachers__second-teacher">
+                        <img class="our-teachers__photo" src="img/teacher2.jpg" alt="teacher" />
+
+                        <span class="our-teachers__name">Алина Гришаева</span>
+
+                        <span class="our-teachers__profession">Front End developer</span>
+
+                        <span class="our-teachers__experience">3 года опыта</span>
+                    </div>
+
+                    <div class="our-teachers__teacher our-teachers__third-teacher">
+                        <img class="our-teachers__photo" src="img/teacher3.jpg" alt="teacher" />
+
+                        <span class="our-teachers__name">Роман Алексеевич</span>
+
+                        <span class="our-teachers__profession">Front End developer</span>
+
+                        <span class="our-teachers__experience">3 года опыта</span>
+                    </div>
+                </div>
+            </div>
+            <div class="teachers-slider">
+                <div>
+                    <div class="teachers-slider__img-mob">
+                        <img src="img/teacher1.jpg" alt="student" class="teachers-slider__img" />
+                    </div>
+
+                    <p class="our-teachers__name">Роман Алексеевич</p>
+
+                    <p class="our-teachers__profession">Front End developer</p>
+
+                    <p class="our-teachers__experience">3 года опыта</p>
+                </div>
+
+                <div>
+                    <img src="img/Rectangle.png" alt="student" class="teachers-slider__img-mob" />
+                    <p class="our-teachers__name">Роман Алексеевич</p>
+
+                    <p class="our-teachers__profession">Front End developer</p>
+
+                    <p class="our-teachers__experience">3 года опыта</p>
+                </div>
+
+                <div>
+                    <img src="img/Rectangle.png" alt="student" class="teachers-slider__img-mob" />
+                    <p class="our-teachers__name">Роман Алексеевич</p>
+
+                    <p class="our-teachers__profession">Front End developer</p>
+
+                    <p class="our-teachers__experience">3 года опыта</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="FAQ">
+            <div class="FAQ__wrapper">
+                <div class="FAQ__question-block">
+                    <h2 class="FAQ__question-block__title">Часто задаваемые вопросы</h2>
+
+                    <div class="FAQ__questions">
+
+                        <ul id="questions">
+                            <li class="FAQ__question">Есть ли пробное занятие?</li>
+                            <li class="FAQ__question">Как решить вопрос о пропуске занятий?</li>
+                            <li class="FAQ__question">Когда стартует набор в новые группы?</li>
+                            <li class="FAQ__question">Где можно ознакомиться с расписанием занятий?</li>
+                            <li class="FAQ__question">Есть ли у школы онлайн-занятия?</li>
+                            <li class="FAQ__question">Сколько длится 1 занятие?</li>
+                            <li class="FAQ__question">Каков порядок оплаты за обучение?</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="FAQ__notation" id="FAQ-notation">
+                    <p id="notationText">Каждое занятие является неотъемлемой частью курса, поэтому мы не видим
+                        необходимости в проведении пробных занятий. Если у Вас есть сомнения, то наша команда поможет
+                        подобрать нужный курс.
+                        Пройдите наше тестирование.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="contacts__wrapper">
+                <div class="contacts__form">
+
+                    <span class="contacts__header">ОСТАЛИСЬ ВОПРОСЫ?</span>
+                    <br>
+                    <span class="contacts__text">Пишите или звоните</span>
+
+                    <div class="contacts__number">
+                        <span class="contacts__title">Телефон:</span>
+                        <div>
+                            <span>+375 (44) 559 87 14</span>
+                            <span>+375 (25) 559 87 15</span>
+                        </div>
+                    </div>
+                    <div class="contacts__email">
+                        <span class="contacts__title">E-mail:</span>
+                        <div>
+                            <span>itec.complex@mail.ru</span>
+                        </div>
+                    </div>
+                    <div class="contacts__telegram">
+                        <span class="contacts__title">Telegram:</span>
+                        <div>
+                            <span>@iteccomplex</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <form class="footer__form">
+                <div class="footer__title">Бесплатная индивидуальная консультация:</div>
+                <p class="footer__input-number">
+                    <input class="footer__input" type="tel" name="telephone" placeholder="+375 ( - - )  ---  --  --" />
+                </p>
+                <p class="footer__input-name">
+                    <input class="footer__input" type="text" name="name" placeholder="ИМЯ" />
+                </p>
+                <p class="footer__input-button">
+                    <input class="footer__button" type="submit" value="Получить консультацию" />
+                </p>
+            </form>
+            <div class="footer__nav">
+                <div class="footer__container">
+                    <div class="footer__nav-title">О нас</div>
+                    <a href="#" class="footer__nav-link">Наша команда</a>
+                    <a href="#" class="footer__nav-link">Наш блог</a>
+                    <a href="#" class="footer__nav-link">Наши проекты</a>
+                </div>
+                <div class="footer__container">
+                    <div class="footer__nav-title">Курсы</div>
+                    <a href="#" class="footer__nav-link">Backend</a>
+                    <a href="#" class="footer__nav-link">Frontend</a>
+                    <a href="#" class="footer__nav-link">QA Engineer</a>
+                </div>
+                <div class="footer__container">
+                    <div class="footer__nav-title">Помощь</div>
+                    <a href="#" class="footer__nav-link">Тест на <br> IT-специальность</a>
+                    <a href="#" class="footer__nav-link">Вакансии</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__wrapper_second">
+            <div class="footer__logo">
+                <img class="footer__logo-img" src="img/logo_ITEC-blue.svg">
+            </div>
+            <div class="footer__address">
+                <div class="footer__address-place">г. Минск, ул. Кирова 10</div>
+                <a class="footer__address-show">Посмотреть на карте</a>
+                <div class="footer__phone">+375 (29) 193-95-77</div>
+                <div class="footer__phone">+375 (29) 193-95-78</div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom">ITEC education company. Все права защищены 2020</div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="slick/slick/slick.min.js"></script>
+    <script src="js/mobile-slider.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

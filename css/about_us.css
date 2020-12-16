@@ -1,0 +1,2544 @@
+
+.tray,
+.teachers-slider,
+.header__mobile-menu,
+.info__coding-img__mobile,
+.header__menu-button,
+.header__contact-mobile,
+.immediate-courses__slider {
+	display: none;
+}
+
+.header {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	background: white;
+	z-index: 10;
+}
+
+.header__nav {
+	width: 1140px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.header__wrapper {
+	width: 204px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo,
+.header__logo-img {
+	width: 89px;
+	height: 34px;
+}
+
+.header__login {
+	width: 78px;
+	height: 21px;
+	display: block;
+	text-align: center;
+	font-family: Montserrat-Medium;
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 0.005em;
+	color: #573E0D;
+	border: 1px solid #d3c546;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.header__menu {
+	width: 533px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 40px;
+}
+
+.header__menu-item {
+	text-align: center;
+	font-family: Montserrat-Regular;
+	font-size: 16px;
+	line-height: 20px;
+	color: #2E2401;
+}
+
+.header__menu-item:hover {
+	margin-top: 2px;
+}
+
+.header__menu-item:active {
+	margin-top: 4px;
+	color: #664F02;
+}
+
+.header__contact {
+	width: 270px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__contact-text {
+	width: 157px;
+	font-family: Montserrat-Light;
+	font-size: 11px;
+	color: #5f4e15;
+	text-align: center;
+}
+
+.header__contact-number {
+	width: 105px;
+	font-family: Montserrat-Regular;
+	font-size: 12px;
+	color: #836a10;
+}
+
+/* authorisation form */
+
+.form-bg{
+	display: none;
+	width: 100%;
+	height: 2000px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(43, 43, 43, 0.45);
+	z-index: 10;
+}
+
+.authorisation-form{
+	width: 516px;
+	height: 530px;
+	position: fixed;
+	top: 90px;
+	left: calc(50% - 258px);
+	background: linear-gradient(172.4deg, #0065DB 5.68%, #000699 97.16%);
+	box-shadow: 0px 5px 10px rgba(7, 28, 104, 0.38);
+	border-radius: 5px;
+	z-index: 5;
+}
+
+.authorisation-form__title{
+	width: 100%;
+	height: 31px;
+	margin-top: 13px;
+	margin-bottom: 22px;
+	font-family:'Montserrat-Regular';
+	font-size: 25px;
+	text-align: center;
+	color: white;
+}
+
+.authorisation-form__img-wrapper{
+	width: 100px;
+	height: 77px;
+	margin: 0 auto 20px;
+}
+
+.authorisation-form__wrapper{
+	width: 303px;
+	height: 57px;
+	position: relative;
+	margin: 0 auto 10px;
+	border: 1px solid #B7CAFF;
+	border-radius: 8px;
+}
+
+.authorisation-form__wrapper legend{
+	margin-left: 12px;
+	padding: 0 8px;
+	font-family: "Montserrat-Light";
+	font-size: 15px;
+	line-height: 18px;
+	color: white;
+}
+
+.authorisation-form__input{
+	width: 245px;
+	height: 33px;
+	margin-left: 43px;
+	padding-left: 8px;
+	font-family: 'Montserrat-Medium';
+	font-size: 17px;
+	color: white;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+.login__input:before{
+	content: url('../img/login-input.svg');
+	width: 18px;
+	height: 18px;
+	display: block;
+	position: absolute;
+	top: 25px;
+	left: 17px;
+}
+
+.password__input:before{
+	content: url('../img/password-input.svg');
+	width: 15px;
+	height: 18px;
+	display: block;
+	position: absolute;
+	top: 25px;
+	left: 19px;
+}
+
+.authorisation-form__input:focus{
+	background: linear-gradient(180deg, rgba(87, 122, 217, 0.61) 0%, rgba(125, 158, 244, 0.61) 100%);
+	border-radius: 5px;
+}
+
+.authorisation-form__buttons{
+	width: 303px;
+	height: 45px;
+	position: relative;
+	margin: 22px auto 0;
+}
+
+.registration-wrapper{
+	width: 165px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	left: 0;
+	background: linear-gradient(98.35deg, #1638E8 19.45%, #112BAE 86.51%);
+	border-radius: 8px;	
+	cursor: pointer;
+}
+
+.authorisation-form__registration{
+	width: 163px;
+	height: 43px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 20px;
+	font-family: 'Montserrat-Medium';
+	font-size: 15px;
+	color: white;
+	filter: drop-shadow(0px 1px 1px rgba(3, 6, 61, 0.16));
+	border-radius: 8px;
+	background: #1630b4;
+}
+
+.authorisation-form__login{
+	width: 159px;
+	height: 45px;
+	position: absolute;
+	right: 0;
+	font-family: 'Montserrat-Regular';
+	font-size: 19px;
+	color: white;
+	background: linear-gradient(180deg, #257CFF 0%, #0015D0 100%);
+	box-shadow: 0px 1px 1px rgba(3, 6, 61, 0.16);
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.authorisation-form__login:active{
+	background: linear-gradient(180deg, #0445A6 0%, #0015D0 100%);
+	box-shadow: 0px 1px 1px rgba(3, 6, 61, 0.16);
+}
+
+.authorisation-form__remind{
+	height: 21px;
+	margin-top: 28px;
+	margin-left: 285px;
+	font-family: 'Montserrat-Light';
+	font-size: 15px;
+	color: white;
+	cursor: pointer;
+}
+
+.authorisation-form__social{
+	width: 303px;
+	margin: 26px auto 0;
+}
+
+.authorisation-form__social-title{
+	margin-bottom: 15px;
+	font-family: 'Montserrat-Light';
+	font-size: 14px;
+	color: white;
+}
+
+.authorisation-form__social-icons{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.authorisation-form__social-icon{
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+/* registration form */
+
+.registration-form{
+	display: none;
+}
+
+.registration-form form{
+	margin-top: 40px;
+}
+
+.registration-form__button-wrapper{
+	width: 194px;
+	height: 43px;
+	margin: 31px auto 0;	
+	cursor: pointer;
+}
+
+.registrarion-form__input{
+	width: 290px;
+	height: 33px;
+	margin: 0 10px;
+	padding-left: 9px;
+	font-family: 'Montserrat-Medium';
+	font-size: 17px;
+	color: white;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+.registrarion-form__input:focus{
+	background: linear-gradient(180deg, rgba(87, 122, 217, 0.61) 0%, rgba(125, 158, 244, 0.61) 100%);
+	border-radius: 5px;
+}
+
+.registration-form__button{
+	width: 194px;
+	height: 43px;
+	font-family: 'Montserrat-Regular';
+	font-size: 14px;
+	color: white;
+	border-radius: 8px;
+	background: linear-gradient(180deg, #257CFF 0%, #0015D0 100%);
+	box-shadow: 0px 1px 1px rgba(3, 6, 61, 0.16);
+	border: none;
+	outline: none;
+}
+
+/* quote */
+
+.advantages-mobile {
+  display: none;
+}
+
+.teachers-mob {
+  display: none;
+}
+
+.main{
+  margin-top: 115px;
+}
+
+.quote {
+  width: 100%;
+  background: linear-gradient(271.82deg, #ffd600 5.97%, #ffe600 36.05%, #ffb800 94.42%);
+  height: 235px;
+  margin: auto;
+  box-shadow: 0px 7px 9px rgba(100, 85, 7, 0.18);
+}
+
+.quote__container {
+  width: 1140px;
+  display: flex;
+  margin: 0 auto;
+  padding-left: 15px;
+}
+
+.quote__quotes {
+  font-family: MontserratAlternates-Black;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 98px;
+  color: #2e2401;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  margin-top: 33px;
+}
+
+.quote__text {
+  font-family: Montserrat-Bold;
+  font-size: 39px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  color: #2e2401;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  margin-top: 48px;
+}
+
+.quote__name {
+  margin-top: 25px;
+  font-family: Montserrat-Light;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2e2401;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/* main-task */
+.main-task {
+  width: 1140px;
+  margin: auto;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-task__name {
+  font-family: Montserrat-SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  margin: auto;
+  color: #2e2401;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  margin-top: 137px;
+  margin-bottom: 58px;
+}
+
+.main-task__paragraph {
+  font-family: Montserrat-Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 180%;
+  color: #2c2200;
+}
+
+.main-task__bold-font {
+  font-family: Montserrat-Regular;
+  font-weight: normal;
+}
+
+.main-task__paragraph_first {
+  width: 720px;
+}
+
+.main-tasks__box {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.main-task__img {
+  margin-top: 65px;
+  width: 360px;
+  height: 277px;
+  margin-right: 145px;
+}
+
+.main-task__paragraph_second {
+  margin-top: 48px;
+  width: 542px;
+}
+
+/* achievements */
+
+.achievements {
+  width: 1140px;
+  padding-left: 15px;
+  margin: auto;
+  margin-bottom: 146px;
+}
+
+.achievements__name {
+  font-family: Montserrat-SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 55px;
+  display: flex;
+  align-items: center;
+  color: #2e2401;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  margin-top: 153px;
+}
+
+.achievements__box {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  margin-top: 56px;
+}
+
+.achievements_achievement-wrapp {
+  padding: 2px;
+  background: linear-gradient(to bottom, #edc22a, #9c7a03);
+}
+
+.achievements_achievement {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: 100%;
+}
+
+.achievements__img-achievement {
+  width: 340px;
+  height: 218px;
+  margin-top: 31px;
+}
+
+.achievements__description {
+  font-family: Montserrat-Thin;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 140%;
+  color: #110d00;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  width: 474px;
+  margin-top: 22px;
+  margin-bottom: 14px;
+  min-height: 224px;
+}
+
+.achievements__description_w {
+  width: 453px;
+}
+
+.achievements__img-circle {
+  width: 41px;
+  height: 41px;
+  margin-bottom: 34px;
+}
+
+/* advantages */
+
+.advantages {
+  display: block;
+  width: 1140px;
+  margin: auto;
+  padding-left: 15px;
+}
+
+.advantages__name {
+  font-family: Montserrat-SemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+  margin: auto;
+  color: #2e2401;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.advantages__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 79px;
+  position: relative;
+}
+
+.advantages__description {
+  font-family: Montserrat-Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 165%;
+  color: #2c2200;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+
+.advantages__description_loc1 {
+  left: 88px;
+  width: 418px;
+}
+
+.advantages__description_loc2 {
+  left: 224px;
+  top: 103px;
+  width: 473px;
+}
+
+.advantages__description_loc3 {
+  left: 360px;
+  top: 245px;
+  width: 473px;
+}
+
+.advantages__offer {
+  width: 740px;
+  margin: auto;
+  font-family: Montserrat-Medium;
+  font-size: 30px;
+  line-height: 130%;
+  text-align: center;
+  color: #2E2401;
+  margin-top: 88px;
+}
+
+/* teachers */
+
+.teachers {
+  width: 1140px;
+  margin: auto;
+  margin-top: 112px;
+  padding-left: 15px;
+}
+
+.teachers__name {
+  font-family: Montserrat-Bold;
+  font-size: 40px;
+  line-height: 49px;
+  color: #2e2401;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  margin-bottom: 33px;
+}
+
+.teachers__img {
+  width: 200px;
+  height: 300px;
+}
+
+.teachers__teacher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 340px;
+  margin-top: 59px;
+}
+
+.teachers__teacher-name {
+  font-family: Montserrat-Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #493b08;
+  margin-top: 28px;
+}
+
+.teacher__teacher-speciality {
+  font-family: Montserrat-Medium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #2e2401;
+  margin-top: 7px;
+}
+
+.teachers__teacher-experience {
+  font-family: Montserrat-ExtraLight;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #2e2401;
+}
+
+.teachers__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* team */
+
+.team {
+  width: 100%;
+  margin: auto;
+  height: 245px;
+  background: linear-gradient(98.09deg, #ffb800 4.68%, #ffd600 93.23%);
+  box-shadow: 0px 7px 9px rgba(100, 85, 7, 0.06);
+  display: flex;
+  align-items: center;
+  margin-top: 114px;
+}
+
+.team__description {
+  width: 1140px;
+  font-family: Montserrat-Light;
+  font-size: 25px;
+  line-height: 140%;
+  color: #2c2200;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  padding-left: 15px;
+}
+
+.teachers__teacher-link {
+  display: block;
+  text-decoration: none;
+}
+
+.teacher__team {
+  display: none;
+}
+
+.team__description-bold {
+  font-family: Montserrat-SemiBold;
+}
+
+/* contacts */
+.contacts {
+	width: 100%;
+}
+
+.contacts__wrapper {
+	max-width: 1140px;
+	display: flex;
+	justify-content: center;
+	margin: 125px auto;
+}
+
+.contacts__form {
+	text-align: center;
+	padding: 20px;
+	width: 700px;
+	height: 338px;
+	border-radius: 5px;
+	border: 1px solid #f3db01;
+}
+
+.contacts__header {
+	font-size: 28px;
+	font-family: Montserrat-Medium;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 34px;
+}
+
+.contacts__text {
+	display: block;
+	margin-top: 9px;
+	font-family: Montserrat-Light;
+	font-size: 15px;
+	line-height: 18px;
+}
+
+.contacts__number {
+	display: flex;
+	justify-content: space-between;
+	width: 350px;
+	margin: 40px auto;
+	position: relative;
+}
+
+.contacts__number span {
+	display: block;
+}
+
+.contacts__number span:first-child {
+	margin-bottom: 10px;
+}
+
+.contacts__number div {
+	position: absolute;
+	font-family: Montserrat-Medium;
+	font-size: 18px;
+	left: 130px;
+}
+
+.contacts__title {
+	font-family: Montserrat-Light;
+	font-size: 15px;
+}
+
+.contacts__email,
+.contacts__telegram {
+	display: flex;
+	justify-content: space-between;
+	width: 350px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.contacts__email div,
+.contacts__telegram div {
+	font-family: Montserrat-Medium;
+	font-size: 18px;
+	position: absolute;
+	left: 130px;
+}
+
+.contacts__title {
+	font-family: Montserrat-Light;
+	font-size: 15px;
+}
+
+.contacts__email {
+	margin-top: 72px;
+	margin-bottom: 20px;
+}
+
+.contacts__telegram {
+	margin-bottom: 17px;
+}
+
+.contacts__header {
+	font-family: Montserrat-Medium;
+	font-size: 28px;
+	line-height: 34px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #2E2401;
+}
+
+/* footer */
+
+.footer {
+	width: 100%;
+	height: 278px;
+	background: linear-gradient(180deg, #082A85 0%, #082165 100%);
+}
+
+.footer__wrapper {
+	width: 1110px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.footer__form {
+	width: 361px;
+	height: 173px;
+	display: block;
+	margin-top: 19px;
+}
+
+.footer__title {
+	margin-bottom: 24px;
+	font-family: Montserrat-Medium;
+	font-size: 13px;
+	color: #DEE4EE;
+	text-transform: uppercase;
+}
+
+.footer__input {
+	width: 255px;
+	height: 35px;
+	font-family: Montserrat-Medium;
+	font-size: 14px;
+	text-align: center;
+	margin-bottom: 12px;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	color: #2E2401;
+}
+
+.footer__input::placeholder{
+	color: #D0D0D0;
+}
+
+.footer__button {
+	width: 255px;
+	height: 43px;
+	margin-top: 10px;
+	font-family: Montserrat-Medium;
+	font-size: 15px;
+	background: linear-gradient(180deg, #5194F6 0%, #0757CD 100%);
+	border-radius: 10px;
+	color: #FFFFFF;
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+
+.footer__button:hover{
+	background: linear-gradient(180deg, #77AEFF 0%, #3F8CFF 100%);
+}
+
+.footer__button:active{
+	background: linear-gradient(180deg, #1556B7 0%, #0757CD 100%);
+}
+
+.footer__nav {
+	width: 530px;
+	margin-top: 19px;
+	margin-right: 120px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__nav-title {
+	margin-bottom: 25px;
+	font-family: Montserrat-Bold;
+	font-size: 16px;
+	color: #DEE4EE;
+}
+
+.footer__nav-link {
+	width: 150px;
+	display: block;
+	margin-top: 19px;
+	font-family: Montserrat-Regular;
+	font-size: 13px;
+	color: #DEE4EE;
+}
+
+.footer__wrapper_second {
+	width: 1110px;
+	height: 74px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+}
+
+.footer__logo-img,
+.footer__logo {
+	width: 79px;
+	height: 29px;
+	margin-top: 8px;
+}
+
+.footer__address {
+	width: 185px;
+	height: 87px;
+	position: relative;
+	bottom: 20px;
+}
+
+.footer__address-place {
+	margin-bottom: 8px;
+	font-family: Montserrat-Medium;
+	font-size: 13px;
+	color: #DEE4EE;
+	text-align: end;
+}
+
+.footer__address-show {
+	display: block;
+	margin-bottom: 15px;
+	font-family: Montserrat-Regular;
+	font-size: 11px;
+	color: #DEE4EE;
+	text-align: end;
+	text-decoration: underline;
+}
+
+.footer__phone {
+	font-family: Montserrat-SemiBold;
+	font-size: 13px;
+	color: #DEE4EE;
+	text-align: end;
+	margin-top: 6px;
+}
+
+
+.bottom {
+	width: 100%;
+	height: 27px;
+	text-align: center;
+	font-family: Montserrat-Thin;
+	font-size: 13px;
+	line-height: 27px;
+	color: #F4F6FD;
+	background: #01073F;
+}
+
+@media (max-width: 1199px) {
+
+  .header__login,
+  .header__contact,
+  .contacts {
+		display: none;
+	}
+
+	.header{
+		height: 50px;
+	}
+
+	.header__nav {
+		width: 945px;
+	}
+
+	.header__wrapper {
+		width: 100px;
+	}
+
+	.header__mobile-menu {
+		display: flex;
+	}
+
+	.header__mobile-login {
+		width: 80px;
+		height: 24px;
+		display: block;
+		text-align: center;
+		font-family: Montserrat-bold;
+		font-size: 15px;
+		color: #573e0d;
+		border: 1px solid #d3c546;
+		border-radius: 3px;
+		cursor: pointer;
+  }
+
+  .main{
+    margin-top: 100px;
+  }
+  
+  .quote {
+    width: 100%;
+    height: 150px;
+  }
+
+  .quote__quotes {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 70px;
+    line-height: 85px;
+    color: #2f2400;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    margin-top: 0;
+  }
+
+  .quote__text {
+    font-family: Montserrat-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 40px;
+    color: #2f2400;
+    margin-left: 6px;
+    margin-top: 17px;
+    width: 630px;
+  }
+
+  .quote__name {
+    margin-top: 15px;
+    padding-left: 65px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .quote__container {
+    width: 945px;
+    padding-left: 12px;
+  }
+
+  /* main-task */
+
+  .main-task {
+    width: 945px;
+    padding-left: 12px;
+    padding-right: 80px;
+    align-items: flex-end;
+  }
+
+  .main-task__img {
+    width: 182px;
+    height: 139px;
+    margin-right: 59px;
+    margin-top: -86px;
+  }
+
+  .main-task__paragraph_first {
+    width: 479px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 170%;
+  }
+
+  .main-task__paragraph_second {
+    width: 479px;
+    margin-top: 35px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 170%;
+  }
+
+  .main-task__name {
+    font-family: Montserrat-Bold;
+    margin-top: 53px;
+    font-size: 37px;
+    padding-left: 65px;
+  }
+
+  .main-task__bold-font {
+    font-family: Montserrat-Light;
+  }
+
+  /* achievements */
+
+  .achievements {
+    width: 830px;
+    padding-left: 0;
+  }
+
+  .achievements_achievement {
+    width: 396px;
+    height: 441px;
+    justify-content: flex-start;
+  }
+
+  .achievements__img-achievement {
+    width: 270px;
+    height: 174px;
+    margin-top: 16px;
+  }
+
+  .achievements__description {
+    width: 351px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 170%;
+    color: #110d00;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    margin-bottom: 0px;
+  }
+
+  .achievements__name {
+    font-family: Montserrat-Bold;
+    font-size: 30px;
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 96px;
+  }
+
+  .achievements__box {
+    margin-top: 38px;
+    padding-left: 0;
+  }
+
+  .achievements__img-circle {
+    display: none;
+  }
+
+  /* advantages */
+  .advantages {
+    width: 830px;
+  }
+
+  .advantages__img1 {
+    width: 154px;
+    height: 145px;
+    margin-top: 235px;
+  }
+
+  .advantages__container {
+    margin-top: 0px;
+  }
+
+  .advantages__img2 {
+    margin-top: 49px;
+  }
+
+  .advantages__offer {
+    font-family: Montserrat-Light;
+  }
+
+  .advantages__description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 170%;
+    color: #110d00;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  }
+
+  .advantages__description_loc1 {
+    top: 99px;
+    left: 0;
+  }
+
+  .advantages__description_loc2 {
+    width: 440px;
+    top: 196px;
+    left: 110px;
+  }
+
+  .advantages__description_loc3 {
+    top: 323px;
+    left: 240px;
+  }
+
+  .advantages__name {
+    font-family: Montserrat-Bold;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #2c2200;
+  }
+
+  .advantages__offer {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #110d00;
+    width: 670px;
+    margin-top: 87px;
+  }
+
+  /* teachers */
+
+  .teachers {
+    width: 800px;
+    padding-left: 12px;
+  }
+
+  .teachers__name {
+    font-family: Montserrat-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    color: #2c2200;
+  }
+
+  .teachers__teacher {
+    width: 160px;
+    margin-top: 40px;
+  }
+
+  .teachers__img {
+    width: 160px;
+    height: 218px;
+  }
+
+  .teachers__teacher-name {
+    font-family: Roboto-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    color: #493b08;
+    margin-top: 7px;
+  }
+
+  .teacher__teacher-speciality {
+    font-family: Roboto-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin-top: 5px;
+    color: #2e2401;
+  }
+
+  .teachers__teacher-experience {
+    font-family: Roboto-Thin;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #2e2401;
+  }
+
+  .teachers__container {
+    width: 670px;
+    margin: auto;
+  }
+
+  .teachers__teacher-link {
+    display: block;
+    margin-right: 95px;
+    text-decoration: none;
+  }
+
+  .teachers__teacher-link:nth-child(3n + 3) {
+    margin-right: 0px;
+  }
+
+  .teachers__teacher-experience {
+    margin-top: 5px;
+  }
+
+  /* team */
+
+  .team {
+    display: none;
+  }
+
+  .teacher__team {
+    display: block;
+    font-family: Montserrat-Light;
+    width: 480px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 170%;
+    color: #493b08;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    margin-left: -65px;
+  }
+
+  /* footer */
+
+	.footer {
+    height: 385px;
+    margin-top: 85px;
+	}
+
+	.footer__wrapper {
+		width: 945px;
+		align-items: center;
+	}
+
+	.footer__form{
+		width: 365px;
+		height: 193px;
+		margin-top: 27px;
+	}
+
+	.footer__input{
+		width: 290px;
+		height: 42px;
+	}
+
+	.footer__button{
+		width: 290px;
+		height: 43px;
+		margin-top: 2px;
+	}
+
+	.footer__nav{
+		height: 124px;
+		margin-right: 15px;
+		margin-top: 35px;
+	}
+
+	.footer__nav-title{
+		margin-bottom: 20px;
+	}
+
+	.footer__wrapper_second {
+		width: 945px;
+		height: 140px;
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 20px;
+	}
+
+	.footer__address-place,
+	.footer__address-show,
+	.footer__phone {
+		text-align: start;
+	}
+
+	.footer__address{
+		width: 770px;
+		height: 56px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: stretch;
+		bottom: 10px;
+	}
+
+	.footer__phone{
+		margin-top: 0;
+		margin-bottom: 6px;
+	}
+}
+
+@media (max-width: 991px) {
+  .header {
+		height: 40px;
+	}
+
+	.header__wrapper{
+		width: 85px;
+	}
+
+	.header__nav {
+		width: 720px;
+	}
+
+	.header__logo,
+	.header__logo-img {
+		width: 82px;
+		height: 33px;
+	}
+
+	.header__menu{
+		width: 440px;
+		margin-left: 0;
+	}
+
+	.header__menu-item {
+		font-size: 15px;
+	}
+
+	.header__contact-mobile {
+		width: 200px;
+  }
+  
+  .quote {
+    width: 100%;
+  }
+
+  .quote__container {
+    width: 720px;
+  }
+
+  .quote__name {
+    padding-left: 300px;
+  }
+
+  /* main-task */
+
+  .main-task__paragraph {
+    width: 420px;
+    margin-top: 25px;
+  }
+
+  .main-task__paragraph_second{
+    width: 420px;
+  }
+
+  .main-task {
+    width: 660px;
+    padding-right: 0;
+  }
+
+  .main-task__name {
+    margin-bottom: 20px;
+    padding-left: 0;
+    font-size: 33px;
+  }
+
+  .main-task__img {
+    margin-right: 46px;
+    margin-top: -120px;
+  }
+
+  /* achievements */
+
+  .achievements {
+    width: 677px;
+    margin-bottom: 52px;
+  }
+
+  .achievements__name {
+    margin-top: 69px;
+  }
+
+  .achievements_achievement {
+    width: 317px;
+    height: 476px;
+    align-items: flex-start;
+  }
+
+  .achievements__img-achievement {
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+
+  .achievements__description {
+    width: 295px;
+    margin-top: 20px;
+    line-height: 26px;
+    margin-left: 25.5px;
+  }
+
+  .achievements__description_w {
+    font-size: 16px;
+    line-height: 27px;
+  }
+
+  /* advantages */
+
+  .advantages {
+    width: 690px;
+  }
+
+  .advantages__img1 {
+    width: 130px;
+    height: 122px;
+    margin-top: 225px;
+  }
+
+  .advantages__img2 {
+    width: 200px;
+    height: 147px;
+    margin-top: 43px;
+    margin-right: 30px;
+  }
+
+  .advantages__description_loc1 {
+    top: 91px;
+  }
+
+  .advantages__description_loc2 {
+    left: 120px;
+  }
+
+  .advantages__description_loc3 {
+    top: 331px;
+  }
+
+  .advantages__offer{
+    margin-top: 100px;
+  }
+
+  /* teachers */
+
+  .teachers {
+    width: 606px;
+    margin-top: 50px;
+  }
+
+  .teacher__team {
+    margin-left: -48px;
+  }
+
+  .teachers__teacher {
+    width: 150px;
+    height: 218px;
+  }
+
+  .teachers__img {
+    width: 110px;
+    height: 150px;
+  }
+
+  .teachers__teacher-name {
+    margin-top: 16px;
+  }
+
+  .teachers__teacher-experience {
+    margin-top: 5px;
+  }
+
+  .teachers__container {
+    width: 510px;
+  }
+
+  .teachers__teacher-link {
+    margin-right: 30px;
+  }
+
+  .teacher__team {
+    width: 450px;
+  }
+
+  .teachers__teacher {
+    margin-top: 29px;
+  }
+
+  /* footer */
+
+	.footer {
+		height: 520px;
+	}
+
+	.footer__wrapper {
+		width: 700px;
+		height: 365px;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.footer__input{
+		width: 240px;
+		height: 35px;
+	}
+
+	.footer__button{
+		width: 240px;
+	}
+
+	.footer__wrapper_second {
+		width: 700px;
+		height: 135px;
+		margin-top: 30px;
+	}
+
+	.footer__address{
+		width: 730px;
+	}
+}
+
+/* ////////////////////////////// */
+
+@media (max-width: 767px) {
+  .header {
+		padding: 0 20px;
+	}
+
+	.header__nav{
+		width: 100%;
+	}
+
+	.header__menu {
+		display: none;
+	}
+
+	.header__mobile-menu {
+		width: 125px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.header__mobile-login {
+		width: 41px;
+		height: 16px;
+		font-family: 'Montserrat-Light';
+		font-size: 16px;
+		line-height: 16px;
+		border: none;
+	}
+
+	.header__menu-button,
+	.info__coding-img__mobile {
+		display: block;
+	}
+
+	.header__menu-button {
+		height: 23px;
+	}
+
+	.authorisation-form{
+		max-height: 90vh;
+		top: 50px;
+		overflow: auto;
+	}
+
+	.authorisation-form__container{
+		margin-bottom: 25px;
+	}
+
+	.registration-form{
+		padding-bottom: 60px;
+	}
+
+	.tray {
+		width: 255px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding-top: 10px;
+		padding-left: 13px;
+		background: linear-gradient(180deg, #062169 0%, #123287 100%);
+		box-shadow: 0px 4px 9px 4px rgba(7, 19, 52, 0.25);
+		border-radius: 5px;
+	}
+
+	.tray__logo {
+		margin-bottom: 13px;
+	}
+
+	.tray__logo,
+	.tray__logo-img {
+		width: 100px;
+		height: 40px;
+	}
+
+	.tray__item {
+		width: 136px;
+		height: 29px;
+		display: block;
+		margin-bottom: 13px;
+		font-family: 'Montserrat-SemiBold';
+		font-size: 20px;
+		color: #FFFFFF;
+	}
+
+	.tray__dropdown {
+		display: none;
+		padding-left: 15px;
+		margin-bottom: 5px;
+	}
+
+	.tray__dropdown-item {
+		width: 130px;
+		height: 29px;
+		display: block;
+		margin-bottom: 9px;
+		font-family: 'Montserrat-Light';
+		font-size: 17px;
+		color: #FFFFFF;
+		text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+	}
+
+	.tray__social {
+		width: 190px;
+		height: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 28px;
+	}
+
+	.tray__phone {
+		margin-top: 18px;
+		margin-bottom: 17px;
+		font-family: 'Montserrat-Regular';
+		font-size: 15px;
+		color: #FFFFFF;
+  }
+
+  .main{
+    margin-top: 50px;
+  }
+  
+  /* quote */
+
+  .teachers-mob {
+    display: block;
+  }
+
+  .quote {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .quote__container{
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .quote__quotes {
+    font-size: 35px;
+    height: 35px;
+    margin-top: -15px;
+  }
+
+  .quote__text {
+    font-family: Montserrat-SemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 119%;
+    margin-top: 14px;
+    color: #2f2400;
+    width: 297px;
+  }
+
+  .quote__name {
+    text-align: start;
+    padding-left: 27px;
+    padding-right: 317px;
+  }
+
+  /* main-tasks */
+
+  .main-task__img {
+    margin: 0;
+  }
+
+  .main-tasks__box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .main-task {
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .main-task__name {
+    width: 353px;
+    text-align: start;
+    margin-left: 0;
+    font-size: 37px;
+    line-height: 45px;
+    margin-top: 31px;
+    margin-bottom: 17px;
+  }
+
+  .main-task__paragraph {
+    width: 100%;
+    margin-top: 5px;
+    font-size: 16px;
+  }
+
+  .main-task__img {
+    margin-top: 20px;
+    width: 177px;
+    height: 132px;
+  }
+
+  .main-task__paragraph_second {
+    margin-top: 14px;
+  }
+
+  /* achievements */
+  .achievements {
+    width: 440px;
+  }
+
+  .achievements__name {
+    font-size: 27px;
+    margin-top: 40px;
+  }
+
+  .achievements_achievement-wrapp {
+    background: white;
+    padding: 0;
+  }
+
+  .achievements__box {
+    flex-direction: column;
+  }
+
+  .achievements__description {
+    margin-left: 0;
+  }
+
+  .achievements__name {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 35px;
+    justify-content: flex-start;
+  }
+
+  .achievements__box {
+    margin-top: 0;
+  }
+
+  .achievements__img-achievement {
+    margin: 0;
+  }
+
+  .achievements__description {
+    margin-top: 18px;
+    width: 100%;
+    height: auto;
+    min-height: auto;
+  }
+
+  .achievements_achievement {
+    width: 100%;
+    height: auto;
+  }
+
+  .achievements__description {
+    margin-bottom: 33px;
+  }
+
+  .achievements {
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 7px;
+  }
+
+  /* advantages */
+
+  .advantages {
+    display: none;
+  }
+
+  .advantages-mobile {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  .advantages__name-mobile {
+    font-family: Montserrat-Bold;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 33px;
+    color: #2c2200;
+    margin-bottom: 27px;
+  }
+
+  .advantages-mobile__img {
+    width: 41px;
+    height: 41px;
+  }
+
+  .advantages-mobile__advantage {
+    display: flex;
+    padding-left: 15px;
+  }
+
+  .advantages__description-mobile {
+    width: 369px;
+    margin-left: 16px;
+  }
+
+  .advantages__description-mobile {
+    width: 100%;
+    font-family: Montserrat-Thin;
+    font-size: 16px;
+    line-height: 155%;
+    color: #2c2200;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  }
+
+  .advantages-mobile__advantage_m1 {
+    margin-bottom: 22px;
+  }
+
+  .advantages-mobile__advantage_m2 {
+    margin-bottom: 17px;
+  }
+
+  .advantages__offer {
+    width: 100%;
+    margin-top: 22px;
+    margin-bottom: 46px;
+    padding: 0 20px;
+  }
+
+  /* teachers */
+
+  .teachers {
+    display: none;
+  }
+
+  .teachers-mob-mob {
+    display: block;
+    margin-top: 61px;
+    margin-bottom: 57px;
+  }
+
+  .teachers-mob__description {
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+    font-family: Montserrat-Thin;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 170%;
+    margin-top: 20px;
+    margin-bottom: 29px;
+    color: #110d00;
+
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  }
+
+  .teachers-mob__name {
+    font-family: Montserrat-Bold;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 33px;
+    color: #2c2200;
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+  }
+
+  .slider__link-mob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  .slider__img-mob {
+    width: 205px;
+    height: 226px;
+    filter: drop-shadow(0px 4px 11px rgba(0, 0, 0, 0.25));
+    margin: auto;
+    object-fit: cover;
+  }
+
+  .teachers__teacher-name {
+    font-family: Montserrat-Light;
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  .slick-slide:focus {
+    outline: none;
+  }
+
+  .slick-list {
+    padding: 0 25%;
+  }
+
+  .teacher__teacher-speciality {
+    width: 200px;
+    text-align: center;
+    font-size: 19px;
+    margin: auto;
+    margin-top: 7px;
+  }
+
+  .teachers__teacher-experience {
+    font-family: Montserrat-Light;
+    margin-top: 7px;
+    font-size: 16px;
+  }
+
+  .teachers-mob {
+    margin-bottom: 60px;
+  }
+
+  .teachers-mob__link {
+    text-decoration: none;
+  }
+  .slick-slider {
+    overflow: hidden;
+  }
+
+  /* footer */
+
+	.footer {
+		height: 800px;
+		padding: 0 20px;
+	}
+
+	.footer__wrapper {
+		width: 100%;
+		height: 635px;
+	}
+
+	.footer__form {
+		width: 462px;
+		height: 220px;
+		margin: 35px auto 55px;
+	}
+
+	.footer__title {
+		margin-bottom: 25px;
+		font-family: 'Montserrat-Regular';
+		font-size: 25px;
+		line-height: 30px;
+		text-align: center;
+		text-transform: initial;
+	}
+
+	.footer__input-number {
+		margin: 0 auto 28px;
+	}
+
+	.footer__input-number,
+	.footer__input {
+		width: 379px;
+		height: 57px;
+		font-family: 'Montserrat-Light';
+		font-size: 22px;
+		color: rgba(143, 150, 159, 0.37);
+	}
+
+	.footer__input-name {
+		display: none;
+	}
+
+	.footer__input-button,
+	.footer__button {
+		width: 324px;
+		height: 59px;
+		margin: 0 auto;
+		font-family: 'Montserrat-Semibold';
+		font-size: 20px;
+		background: linear-gradient(180deg, #70A8FA 0%, #1E5CB8 100%);
+		box-shadow: 0px 4px 5px 3px rgba(7, 31, 79, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+		border-radius: 10px;
+	}
+
+	.footer__nav {
+		width: 410px;
+		height: 310px;
+		flex-wrap: wrap;
+		margin: 0 auto;
+	}
+
+	.footer__container {
+		margin-bottom: 0px;
+	}
+
+	.footer__nav-title {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+
+	.footer__nav-link {
+		width: initial;
+		margin-left: 22px;
+		margin-top: 14px;
+		font-family: 'Montserrat-Regular';
+		font-size: 18px;
+	}
+
+	.footer__nav-link br{
+		display: none;
+	}
+
+	.footer__wrapper_second {
+		width: 410px;
+		height: 150px;
+		margin: 0 auto;
+	}
+
+	.footer__logo,
+	.footer__logo-img {
+		width: 139px;
+		height: 47px;
+		margin: 0;
+	}
+
+	.footer__address {
+		width: 200px;
+		flex-wrap: nowrap;
+	}
+
+	.footer__address-place {
+		margin-bottom: 17px;
+		font-family: 'Montserrat-Medium';
+		font-size: 16px;
+	}
+
+	.footer__address-show {
+		font-size: 15px;
+	}
+
+	.footer__phone {
+		display: none;
+	}
+
+	.bottom {
+		height: 43px;
+		padding-top: 10px;
+		font-size: 14px;
+		line-height: 24px;
+	}
+}
+
+@media (max-width: 575px) {
+  .header {
+		padding: 0 15px;
+	}
+
+	.header__nav {
+		width: 100%;
+	}
+
+	.header__mobile-menu {
+		width: 105px;
+	}
+
+	.authorisation-form{
+		width: 290px;
+		height: 488px;
+		max-height: 90vh;
+		top: 50px;
+		left: calc(50% - 145px);
+		overflow: auto;
+	}
+
+	.authorisation-form__container{
+		margin-bottom: 15px;
+	}
+
+	.authorisation-form__title{
+		margin-bottom: 14px;
+	}
+
+	.authorisation-form__img-wrapper{
+		margin: 0 auto 15px;
+	}
+
+	.authorisation-form__wrapper{
+		width: 246px;
+		height: 53px;
+		margin: 0 auto 6px;
+	}
+
+	.authorisation-form__wrapper legend{
+		margin-left: 10px;
+		padding: 0 4px;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.authorisation-form__input{
+		width: 201px;
+		height: 29px;
+		margin-left: 36px;
+	}
+
+	.login__input:before{
+		left: 13px;
+		top: 21px;
+	}
+
+	.password__input:before{
+		top: 21px;
+		left: 13px;
+	}
+
+	.authorisation-form__buttons{
+		width: 246px;
+	}
+
+	.registration-wrapper{
+		width: 139px;
+		height: 42px;
+	}
+
+	.authorisation-form__login{
+		width: 123px;
+		height: 42px;
+	}
+
+	.authorisation-form__registration{
+		width: 137px;
+		height: 40px;
+		padding-right: 15px;
+		font-size: 14px;
+	}
+
+	.authorisation-form__remind{
+		width: 132px;
+		margin-left: 152px;
+		margin-top: 23px;
+		font-size: 14px;
+	}
+
+	.authorisation-form__social{
+		width: 246px;
+		margin: 15px auto 0;
+	}
+
+	.authorisation-form__social-title{
+		margin-bottom: 19px;
+	}
+
+	.authorisation-form__social-icon,
+	.authorisation-form__icon-img{
+		width: 40px;
+		height: 40px;
+	}
+	
+	/* registration form */
+	.registration-form{
+		padding-bottom: 40px;
+	}
+
+	.registrarion-form__input{
+		width: 224px;
+		height: 29px;
+	}
+       
+	.tray {
+		width: 216px;
+  }
+  
+  /* quote */
+
+  .quote {
+    width: 100%;
+    height: 135px;
+    padding: 0 15px;
+  }
+
+  .quote__text {
+    font-size: 17px;
+    width: 257px;
+    margin-top: 18px;
+    margin-left: 4px;
+  }
+
+  .quote__name {
+    margin-left: 25px;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: start;
+  }
+
+  .quote__quotes {
+    font-size: 35px;
+    margin-top: -12px;
+  }
+
+  /* main-task */
+  .main-task__name {
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    width: 290px;
+  }
+
+  .main-task__paragraph {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .main-task__img {
+    width: 173px;
+  }
+
+  .main-task {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  /* achievements */
+
+  .achievements__name {
+    width: 290px;
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .achievements__img-achievement {
+    width: 242px;
+    height: 156px;
+  }
+
+  .achievements__description {
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 23px;
+    color: #110d00;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    margin-top: 17px;
+    margin-bottom: 25px;
+  }
+
+  .achievements {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  /* advantages */
+
+  .advantages__name-mobile {
+    width: 290px;
+    font-size: 25px;
+    margin-top: 4px;
+    margin-bottom: 21px;
+  }
+
+  .advantages__offer {
+    font-size: 23px;
+    line-height: 34px;
+    padding: 0;
+    margin-top: 31px;
+    margin-bottom: 39px;
+    width: 100%;
+  }
+
+  .advantages__description-mobile {
+    width: 100%;
+    min-width: 219px;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 155%;
+    color: #2c2200;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  }
+
+  .advantages-mobile {
+    width: 100%;
+    padding: 0 15px;
+  }
+  /* ffff */
+
+  .slider__img-mob {
+    width: 178px;
+    height: 194px;
+  }
+
+  .teachers-mob__name {
+    width: 100%;
+    padding: 0 15px;
+    min-width: 290px;
+    font-size: 23px;
+  }
+
+  .teachers__teacher-name {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .teacher__teacher-speciality {
+    font-size: 18px;
+    margin-top: 7px;
+    width: 200px;
+  }
+
+  .slider__project-description-mob {
+    width: 200px;
+  }
+
+  .teachers__teacher-experience {
+    font-size: 14px;
+  }
+
+  .teachers-mob__description {
+    font-size: 16px;
+    line-height: 180%;
+    width: 100%;
+    padding: 0 15px;
+    color: #110d00;
+  }
+
+  .teachers-mob {
+    margin-bottom: 48px;
+  }
+
+  .slider__project-description-mob {
+    font-family: Montserrat-Medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    text-decoration: none;
+    color: #2f2503;
+
+    width: 197px;
+    margin: auto;
+    margin-top: 25px;
+  }
+
+  .slider__project-teacher-mob {
+    font-family: Montserrat-Light;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    margin: auto;
+    margin-top: 12px;
+    color: #5e4f1c;
+    text-decoration: none;
+    width: 128px;
+  }
+
+  .graduation-projects__name {
+    font-size: 18px;
+    margin-top: 92px;
+    margin-bottom: 61px;
+    width: 290px;
+    text-align: start;
+    margin-left: 15px;
+  }
+
+  .slick-slide:focus {
+    outline: none;
+  }
+
+  .slick-list {
+    padding: 0 18%;
+  }
+
+  /* footer */
+
+	.footer {
+		height: 676px;
+		padding: 0 15px;
+	}
+
+	.footer__wrapper{
+		width: 290px;
+		height: 535px;
+		margin: 0 auto;
+	}
+
+	.footer__form {
+		width: 100%;
+		margin-bottom: 0px;
+		margin-top: 22px;
+	}
+
+	.footer__title {
+		font-size: 17px;
+		line-height: 21px;
+		text-align: center;
+	}
+
+	.footer__input-number,
+	.footer__input {
+		width: 290px;
+		height: 50px;
+	}
+
+	.footer__input-button,
+	.footer__button {
+		width: 255px;
+		height: 51px;
+		font-size: 16px;
+	}
+
+	.footer__nav {
+		width: 290px;
+		height: 290px;
+	}
+
+	.footer__nav-title {
+		font-size: 20px;
+	}
+
+	.footer__nav-link {
+		font-size: 16px;
+		margin-top: 20px;
+		margin-left: 8px;
+	}
+
+	.footer__wrapper_second{
+		width: 290px;
+		height: 138px;
+		margin: 0 auto;
+	}
+
+	.footer__address-place {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+	.footer__address-show {
+		font-size: 13px;
+	}
+
+	.bottom {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-top: 0;
+		font-size: 14px;
+		line-height: 17px;
+	}
+}

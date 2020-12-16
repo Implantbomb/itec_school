@@ -1,0 +1,321 @@
+
+.news-open__container {
+    width: 1140px;
+    margin: 100px auto;
+}
+
+.news-open__title {
+    font-family: Montserrat-Black;
+    font-size: 46px;
+    line-height: 60px;
+    text-align: left;
+    color: #493B08;
+    margin-bottom: 28px;
+}
+
+.news-open__date {
+    font-family: Montserrat-Thin;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    letter-spacing: 0.025em;
+    color: #493B08;
+}
+
+.news-open__image-wrapper {
+    width: 768px;
+    height: 440px;
+    background: #C4C4C4;
+    margin-top: 43px;
+}
+
+.news-open__image {
+    width: 100%;
+    height: 100%;
+}
+
+.news-open__text {
+    width: 1015px;
+    margin-top: 28px;
+    font-family: Montserrat-Light;
+    font-size: 23px;
+    line-height: 37px;
+    color: #493B08;
+}
+
+.news-open__form-text {
+    margin-top: 111px;
+    margin-bottom: 52px;
+    font-family: Montserrat-Bold;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    color: #493B08;
+}
+
+.news-open__form {
+    width: 696px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.news-open__link-img {
+    background: none;
+}
+
+.news-open__img {
+    width: 60px;
+    height: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+
+    .news-open__container {
+        width: 960px;
+    }
+
+    .news-open__title {
+        font-family: Montserrat-SemiBold;
+        font-size: 33px;
+        line-height: 46px;
+        color: #2E2401;
+        margin-bottom: 10px;
+    }
+
+    .news-open__date {
+        font-family: Montserrat-Thin;
+        font-size: 17px;
+        line-height: 26px;
+        text-align: left;
+    }
+
+    .news-open__image-wrapper {
+        width: 450px;
+        height: 262px;
+        background: #C4C4C4;
+        margin-top: 20px;
+    }
+
+    .news-open__image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .news-open__text {
+        width: 768px;
+        font-size: 17px;
+        line-height: 32px;
+    }
+
+    .news-open__form-text {
+        margin-top: 84px;
+        margin-bottom: 40px;
+        font-family: Montserrat-Bold;
+        font-size: 25px;
+        line-height: 38px;
+    }
+
+    .news-open__form {
+        width: 650px;
+    }
+
+    .news-open__img {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .news-open__container {
+        width: 720px;
+        margin: 75px auto;
+    }
+
+    .news-open__title {
+        font-family: Montserrat-SemiBold;
+        font-size: 27px;
+        line-height: 38px;
+        margin-bottom: 7px;
+    }
+
+    .news-open__date {
+        font-family: Montserrat-Thin;
+        font-size: 17px;
+        line-height: 26px;
+        text-align: left;
+    }
+
+    .news-open__image-wrapper {
+        width: 450px;
+        height: 262px;
+        background: #C4C4C4;
+        margin-top: 20px;
+    }
+
+    .news-open__image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .news-open__text {
+        width: 600px;
+        font-family: Montserrat-Light;
+        font-size: 17px;
+        line-height: 32px;
+        margin-top: 24px;
+    }
+
+    .news-open__form-text {
+        margin-top: 59px;
+        margin-bottom: 32px;
+        font-family: Montserrat-Bold;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .news-open__img {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .news-open__container {
+        width: 100%;
+        margin: 60px auto;
+        padding-right: 20px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .news-open__wrapper {
+        width: 100%;
+    }
+
+    .news-open__title {
+        font-family: Montserrat-SemiBold;
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .news-open__date {
+        font-family: Montserrat-Thin;
+        font-size: 17px;
+        line-height: 26px;
+        text-align: left;
+    }
+
+    .news-open__image-wrapper {
+        width: 440px;
+        height: 255px;
+        background: #C4C4C4;
+        margin-top: 13px;
+    }
+
+    .news-open__image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .news-open__text {
+        width: 100%;
+        font-family: Montserrat-Light;
+        font-size: 18px;
+        line-height: 34px;
+        margin-top: 17px;
+    }
+
+    .news-open__form-text {
+        margin-top: 59px;
+        margin-bottom: 36px;
+        font-family: Montserrat-Bold;
+        font-size: 25px;
+        line-height: 38px;
+    }
+
+    .news-open__form {
+        margin: 0 auto;
+        width: 252px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .news-open__link-img {
+        width: 63px;
+        height: 75px;
+    }
+
+    .news-open__img {
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .news-open__container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .news-open__title {
+        font-family: Montserrat-SemiBold;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 9px;
+    }
+
+    .news-open__date {
+        font-family: Montserrat-Thin;
+        font-size: 17px;
+        line-height: 26px;
+        text-align: left;
+    }
+
+    .news-open__image-wrapper {
+        width: 290px;
+        height: 168px;
+        background: #C4C4C4;
+    }
+
+    .news-open__image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .news-open__text {
+        font-family: Montserrat-Light;
+        font-size: 16px;
+        line-height: 27px;
+        margin-top: 19px;
+    }
+
+    .news-open__form-text {
+        margin-top: 66px;
+        margin-bottom: 40px;
+        font-family: Montserrat-Bold;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .news-open__form {
+        width: 205px;
+    }
+
+    .news-open__link-img {
+        width: 51px;
+        height: 70px;
+    }
+
+    .news-open__img {
+        width: 40px;
+        height: 40px;
+    }
+
+}

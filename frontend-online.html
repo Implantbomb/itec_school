@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITEC - Frontend-online</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/frontend-online.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__wrapper">
+                <a class="header__logo" href="main.html">
+                    <img class="header__logo-img" src="img/logo_ITEC.svg">
+                </a>
+                <a class="header__login">Войти</a>
+            </div>
+            <div class="header__menu">
+                <a class="header__menu-item" href="courses.html">Курсы</a>
+                <a class="header__menu-item" href="#">Тест</a>
+                <a class="header__menu-item" href="#">О нас</a>
+                <a class="header__menu-item" href="#">IT-новости</a>
+                <a class="header__menu-item" href="contacts.html">Контакты</a>
+            </div>
+            <div class="header__contact">
+                <div class="header__contact-text">
+                    <p>Не жди лучшего времени!</p>
+                    <p>Звони прямо сейчас!</p>
+                </div>
+                <div class="header__contact-number">
+                    <p>8 (029) 556 40 29</p>
+                    <p>8 (029) 556 40 29</p>
+                </div>
+            </div>
+            <div class="header__mobile-menu">
+                <div class="header__mobile-login">Войти</div>
+                <div class="header__menu-button">
+                    <img class="header__menu-button-img" src="img/menu-button.svg">
+                    <div class="tray">
+                        <div class="tray__logo">
+                            <img class="tray__logo-img" src="img/logo_ITEC-blue.svg">
+                        </div>
+                        <nav class="tray__nav">
+                            <div id="trayDropdown" class="tray__item">Курсы</div>
+                            <div class="tray__dropdown">
+                                <a class="tray__dropdown-item" href="#">Frontend</a>
+                                <a class="tray__dropdown-item" href="#">Backend</a>
+                                <a class="tray__dropdown-item" href="#">Data science</a>
+                                <a class="tray__dropdown-item" href="#">QA Engineer</a>
+                            </div>
+                            <a class="tray__item" href="#">Тест</a>
+                            <a class="tray__item" href="#">О нас</a>
+                            <a class="tray__item" href="#">IT-новости</a>
+                            <a class="tray__item" href="#">Контакты</a>
+                        </nav>
+                        <div class="tray__social">
+                            <div class="tray__social-wrapper">
+                                <img class="tray__social-img" src="img/vk2.svg">
+                            </div>
+                            <div class="tray__social-wrapper">
+                                <img class="tray__social-img" src="img/insta2.svg">
+                            </div>
+                            <div class="tray__social-wrapper">
+                                <img class="tray__social-img" src="img/mail2.svg">
+                            </div>
+                            <div class="tray__social-wrapper">
+                                <img class="tray__social-img" src="img/telegram2.svg">
+                            </div>
+                        </div>
+                        <div class="tray__phone">+375 (44) 556 40 28</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class = "form-bg">
+        <div class = "authorisation-form login-form">
+            <div class = "authorisation-form__container">
+                <div class = "authorisation-form__title">Войти</div>
+                <div class = "authorisation-form__img-wrapper">
+                    <img src = "img/login-icon.png" class = "authorisation-form__img">
+                </div>
+                <form action = "" method = "GET">
+                    <fieldset class = "authorisation-form__wrapper login__input">
+                        <legend>Логин</legend>
+                        <input class = "authorisation-form__input" type = "text">
+                    </fieldset>
+                    <fieldset class = "authorisation-form__wrapper password__input">
+                        <legend>Пароль</legend>
+                        <input class = "authorisation-form__input" type = "password">
+                    </fieldset>
+                    <div class = "authorisation-form__buttons">
+                        <div id = "registrationForm" class = "registration-wrapper">
+                            <div class = "authorisation-form__registration">Регистрация</div>
+                        </div>
+                        <button class = "authorisation-form__login">Войти</button>
+                    </div>
+                </form>    
+                <div class = "authorisation-form__remind">Забыли пароль?</div>
+                <div class = "authorisation-form__social">
+                    <div class = "authorisation-form__social-title">Войти с помощью:</div>
+                    <form class = "authorisation-form__social-icons">
+                        <button class = "authorisation-form__social-icon">
+                            <img src = "img/vk1.svg" class = "authorisation-form__icon-img">
+                        </button>
+                        <button class = "authorisation-form__social-icon">
+                            <img src = "img/fb.svg" class = "authorisation-form__icon-img">
+                        </button>
+                        <button class = "authorisation-form__social-icon">
+                            <img src = "img/google.svg" class = "authorisation-form__icon-img">
+                        </button>
+                    </form>
+                </div>
+            </div>    
+        </div>
+        <div class = "registration-form authorisation-form">
+            <div class = "authorisation-form__title">Регистрация</div>
+            <form action = "" method = "POST">
+                <fieldset class = "authorisation-form__wrapper">
+                    <legend>Имя пользователя</legend>
+                    <input class = "registrarion-form__input" type = "text">
+                </fieldset>
+                <fieldset class = "authorisation-form__wrapper">
+                    <legend>Логин</legend>
+                    <input class = "registrarion-form__input" type = "text">
+                </fieldset>
+                <fieldset class = "authorisation-form__wrapper">
+                    <legend>Пароль</legend>
+                    <input class = "registrarion-form__input" type = "password">
+                </fieldset>
+                <fieldset class = "authorisation-form__wrapper">
+                    <legend>Подтвердите пароль</legend>
+                    <input class = "registrarion-form__input" type = "password">
+                </fieldset>
+                <fieldset class = "authorisation-form__wrapper">
+                    <legend>Email</legend>
+                    <input class = "registrarion-form__input" type = "email">
+                </fieldset>
+                <div class = "registration-form__button-wrapper">
+                    <button class = "registration-form__button">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+    </div>  
+    <!-- Главный блок курса -->
+    <div class="direction">
+        <div class="direction__container">
+            <div class="direction__line">
+
+            </div>
+            <div class="direction__title-course">
+                Онлайн-курс
+            </div>
+            <h1 class="direction__title">
+                Frontend
+            </h1>
+            <!-- Контейнер для мобильной версии адаптива-->
+            
+            <div class="direction__container-main--mobile">
+                <div class="direction__container-title--mobile">
+                    <div class="direction__title-course--mobile">
+                        Онлайн-курс
+                    </div>
+                    <h1 class="direction__title--mobile">
+                        Frontend
+                    </h1>
+                    <div class="direction__container-background--mobile">
+                        <div class="direction__wrapper-background-img--mobile">
+                            <img src="img/main_img_mobile.svg" alt="" class="direction__main-img--mobile">
+                        </div>
+                        <div class="direction__lower-container-text--mobile">
+                            <p class="direction__start-text--mobile">
+                                Старт:
+                            </p>
+                            <p class="direction__start-text-number--mobile">
+                                10 сентября
+                            </p>
+                            <p class="direction__start-text-time--mobile">
+                                18:30-20:30
+                            </p>
+                            <p class="direction__start-text-time--mobile">
+                                (Пн/Ср)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="direction__container-info--mobile">
+                        <div class="direction__info--mobile">
+                            <img src="img/clock_main.svg" alt="" class="direction__info-img--mobile">
+                            <p class="direction__info-text--mobile">
+                                25 занятий
+                            </p>
+                        </div>
+                        <div class="direction__info--mobile">
+                            <img src="img/calendar_main.svg" alt="" class="direction__info-img--mobile">
+                            <p class="direction__info-text--mobile">
+                                2 занятия в неделю
+                            </p>
+                        </div>
+                        <div class="direction__info--mobile">
+                            <img src="img/smile_main.svg" alt="" class="direction__info-img--mobile">
+                            <p class="direction__info-text--mobile">
+                                Старт в сентябре
+                            </p>
+                        </div>
+                    </div>
+                    <div class="direction__container-button--mobile">
+                        <a href="#" class="direction__link--mobile">
+                            <div class="direction__consultation-button--mobile">
+                                Записаться на курс
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="direction__container-main">
+                <div class="direction__container-background">
+                    <div class="direction__container-info">
+                        <div class="direction__info-wrapper">
+                            <div class="direction__info">
+                                <img src="img/clock_main.svg" alt="" class="direction__info-img">
+                                <p class="direction__info-text">
+                                    25 занятий
+                                </p>
+                            </div>
+                            <div class="direction__info">
+                                <img src="img/calendar_main.svg" alt="" class="direction__info-img">
+                                <p class="direction__info-text">
+                                    2 занятия в неделю
+                                </p>
+                            </div>
+                            <div class="direction__info">
+                                <img src="img/smile_main.svg" alt="" class="direction__info-img">
+                                <p class="direction__info-text">
+                                    Старт в сентябре
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="direction__container-lower">
+                        <div class="direction__container-lower-line">
+                            <div class="direction__lower-container-text">
+                                <p class="direction__start-text">
+                                    Старт:
+                                </p>
+                                <p class="direction__start-text-number">
+                                    10 сентября
+                                </p>
+                                <p class="direction__start-text-time">
+                                    18:30-20:30
+                                </p>
+                                <p class="direction__start-text-time">
+                                    (Пн/Ср)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="direction__lower-container-button">
+                            <a href="#" class="direction__link">
+                                <div class="direction__consultation-button">
+                                    Записаться на курс
+                                </div>
+                            </a>
+                            <a href="#" class="direction__link">  
+                                <div class="direction__free-button">
+                                    Бесплатная консультация
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="direction__container-img">
+                    <img src="img/direction_main_img.svg" alt="" class="direction__img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Общий блок Плюсов -->
+    <div class="pros">
+        <div class="pros__container">
+            <div class="pros__wrapper">
+                <img src="img/check_mark.svg" alt="" class="pros__img">
+                <p class="pros__text">
+                    Получите востребованную профессию frontend-разработчика
+                </p>
+            </div>
+            <div class="pros__wrapper">
+                <img src="img/check_mark.svg" alt="" class="pros__img">
+                <p class="pros__text">
+                    Реализуйте жизнеспособные проекты уже во время обучения
+                </p>
+            </div>
+            <div class="pros__wrapper">
+                <img src="img/check_mark.svg" alt="" class="pros__img">
+                <p class="pros__text">
+                    Соберите крутое портфолио для получения работы своей мечты
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Общий контейнер для синего фона -->
+    <div class="developer">
+        <div class="developer__container">
+            <div class="deleloper__who-wrapper">
+                <img src="img/develope_vector.svg" alt="" class="developer__who-img">
+                <p class="developer__who-text">
+                    КТО ТАКОЙ <br> FRONTEND-РАЗРАБОТЧИК?
+                </p>
+            </div>
+            <p class="developer__about">
+               <span class="developer__about-weight">Front-end – </span> это «лицо» Вашего сайта. Давайте сразу проведем некоторую границу между web-дизайнером и web-разработчиком (он же <span class="developer__about-font"> frontend-разработчик</span>, он же <span class="developer__about-font">frontend developer</span>). Разработка макета, дружелюбного интерфейса, подбор удачных цветовых решений – это работа web-дизайнера.
+            </p>
+            <div class="developer__task-container">
+                <div class="developer__task-img-wrapper">
+                    <img src="img/developer_img_task.svg" alt="" class="developer__task-img-notebook">
+                </div>
+                <div class="developer__task-text-wrapper">
+                    В свою очередь задачи frontend-разработчика:
+                    <div class="developer__task-text">
+                        <img src="img/Vector.svg" alt="" class="developer__task-img">
+                        <p class="developer__text">
+                            сделать из статичной картинки, предоставленной web-дизайнером, интерактивную web-страницу;
+                        </p>
+                    </div>
+                    <div class="developer__task-text">
+                        <img src="img/Vector.svg" alt="" class="developer__task-img">
+                        <p class="developer__text">
+                            заставить работать различные кнопки, меню, галереи, поисковые системы, баннеры – все то, что по плану должно быть на сайте;
+                        </p>
+                    </div>
+                    <div class="developer__task-text">
+                        <img src="img/Vector.svg" alt="" class="developer__task-img">
+                        <p class="developer__text">
+                            сделать так, чтобы страница сайта корректно отображалась, независимо от браузера и размера экрана;
+                        </p>
+                    </div>
+                    <div class="developer__task-text">
+                        <img src="img/Vector.svg" alt="" class="developer__task-img">
+                        <p class="developer__text">
+                            провести проверки, тестирования и оптимизацию функционала.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="developer__bottom-container">
+                <div class="developer__bottom-strip">
+                    
+                </div>
+                <div class="developer__bottom-text">
+                    И это только верхушка айсберга!<br> <span class="developer__bottom-text_font">Frontend-</span>программирование несет за собой знание огромного множества web-технологий.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Блок Преимущест -->
+    <div class="advantages">
+        <h2 class="advantages__title">
+            Преимущества обучения <span class="advantages__title-size"> онлайн: </span>
+        </h2>
+        <div class="advantages__container">
+            <div class="advantages__text">
+                <span class="advantages__text-weight"> Комфорт </span> <br>
+                Лучшая аудитория – собственная комната? Не вопрос! Учитесь, сидя дома
+            </div>
+            <div class="advantages__text">
+                <span class="advantages__text-weight"> Самодисциплина </span><br>
+                Вы будете вынуждены учиться управлять своим временем и задачами – этот навык поможет Вам качественнее работать в будущем
+            </div>
+            <div class="advantages__img-wrapper">
+                <img src="img/advantages_img.svg" alt="" class="advantages__img">
+            </div>
+            <div class="advantages__text">
+                <span class="advantages__text-weight"> Экономия времени </span><br>
+                Не нужно тратить время на поездку в школу и обратно
+            </div>
+            <div class="advantages__text">
+                <span class="advantages__text-weight"> Повтор в любое время </span><br>
+                Вы можете просматривать материалы курса несколько раз – все это поможет Вам лучше разобраться в каких-либо упущенных моментах или освежить  знания
+            </div>
+        </div>
+    </div>
+    <!-- Блок с программой обучения -->
+    <div class="program">
+        <div class="program__container">
+            <h2 class="program__title">
+                С программой обучения можно ознакомиться здесь
+            </h2>
+            <div class="program__img-wrapper">
+                <img src="img/program_mark.svg" alt="" class="program__img">
+            </div>
+            <a href="#" class="program__link">
+                <div class="program__button">
+                    Просмотреть программу
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Общий блок программы курса -->
+    <div class="course">
+        <p class="course__text">
+            <span class="course__text-weight">01</span>
+            Введение и основные понятия.
+        </p>
+        <p class="course__text">
+            <span class="course__text-weight">02</span>
+            Структура страниц.
+        </p>
+        <p class="course__text">
+            <span class="course__text-weight">03 </span>
+            URL, Изображения и ссылки.
+        </p>
+        <p class="course__text">
+            <span class="course__text-weight">04</span>
+            Знакомство с графическим редактором Adobe Photoshop.
+        </p>
+        <p class="course__text">
+            <span class="course__text-weight">05</span>
+            HTML Таблицы. Основы табличной верстки.
+        </p>
+        <p class="course__text">
+            <span class="course__text-weight">06</span>
+            CSS Введение.
+        </p>
+        <p class="course__text">
+            <span class="course__text-weight">07</span>
+            Псевдоклассы и псевдоэлементы.
+        </p>
+        <p class="course__text">
+            <span class="course__text-weight">08</span>
+            CSS директивы.
+        </p>
+        <p class="course__text">
+            <span class="course__text-weight">09</span>
+            Работа со шрифтами.
+        </p>
+        <p class="course__text">
+            <span class="course__text-weight">10</span>
+            Стилизация типографики.
+        </p>
+        <p class="course__text">
+            <span class="course__text-weight">11</span>
+            Позиционирование в CSS.
+        </p>
+        <p class="course__text">
+            <span class="course__text-weight">12</span>
+            HTML Формы. Кроссбраузерная стилизация элементов формы (UI).
+        </p>
+        <p class="course__text">
+            <span class="course__text-weight">13</span>
+            Iframe и HTML5 элементы.
+        </p>
+        <p class="course__text">
+            <span class="course__text-weight">14</span>
+            Мета-теги и фавиконки.
+        </p>
+        <p class="course__text">
+            <span class="course__text-weight">15</span>
+            Знакомство с языком программирования JavaScript.
+        </p>
+        <div class="course__roll-up">
+            <img src="img/roll_up_course.svg" alt="" class="course__img">
+        </div>
+    </div>
+    <!-- Общий блок информации о преподавателях -->
+    <div class="teacher">
+        <div class="teacher__container">
+            <h2 class="teacher__title">
+                Преподаватели
+            </h2>
+            <div class="teacher__container-line">
+                <div class="teacher__line">
+
+                </div>
+            </div>
+            <div class="teacher__container-info">
+                <div class="teacher__container-img">
+                    <img src="" alt="" class="teacher__img">
+                </div>
+                <div class="teacher__container-text">
+                    <p class="teacher__info-title"> <span class="teacher__info-title_weight">Яна </span> Машкова </p>
+                    <div class="teacher__info-wrapper">
+                        <img src="img/mark_teacher_info.svg" alt="" class="teacher__info-img">
+                        <p class="teacher__text">
+                            3 года опыта работы в Frontend
+                        </p>
+                    </div>
+                    <div class="teacher__info-wrapper">
+                        <img src="img/mark_teacher_info.svg" alt="" class="teacher__info-img">
+                        <p class="teacher__text">
+                            5 лет работы QA Engineer
+                        </p>
+                    </div>
+                    <div class="teacher__info-wrapper">
+                        <img src="img/mark_teacher_info.svg" alt="" class="teacher__info-img">
+                        <p class="teacher__text">
+                            Более 400 выполненных проектов
+                        </p>
+                    </div>
+                    <div class="teacher__info-wrapper">
+                        <img src="img/mark_teacher_info.svg" alt="" class="teacher__info-img">
+                        <p class="teacher__text">
+                            Более 100 выпускников
+                        </p>
+                    </div>
+                    <div class="teacher__info-wrapper">
+                        <img src="img/mark_teacher_info.svg" alt="" class="teacher__info-img">
+                        <p class="teacher__text">
+                            91% устроенных на работу
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Блок с оплатой -->
+    <div class="payment">
+        <div class="payment__container">
+            <div class="payment__discount-container">
+                <div class="payment__online">
+                    Онлайн-курс <span class="payment__online-text-weight"> Frontend </span>
+                </div>
+                <h2 class="payment__discount-title--mobile">
+                    Оставить заявку на курс
+                </h2>
+                <div class="payment__discount-stage">
+                    <p class="payment__discount-text">
+                        Оплата в 1 этап
+                    </p>
+                    <p class="payment__discount-text-weight">
+                        Скидка 12%
+                    </p>
+                </div>
+                <div class="payment__discount-stage">
+                    <p class="payment__discount-text">
+                        Оплата в 2 этапа
+                    </p>
+                    <p class="payment__discount-text-weight">
+                        Скидка 17%
+                    </p>
+                </div>
+                <div class="payment__discount-stage">
+                    <p class="payment__discount-text payment__discount-text_line">
+                        Оплата в 3 этап
+                    </p>
+                </div>
+                <p class="payment__discount-course">
+                    Стоимость курса:
+                </p>
+                <div class="payment__discount-numeral">
+                    880 б.р.
+                </div>
+                <div class="payment__discount-smile">
+                    <img src="img/smile_payment.svg" alt="" class="payment__discount-img">
+                </div>
+            </div>
+            <div class="payment__form-container">
+                <p class="payment__form-text">
+                    Оставить заявку на курс
+                </p>
+                <form action="#" class="payment__form-wrapper">
+                    <input type="text" class="payment__form" placeholder="Имя">
+                    <input type="email" class="payment__form" placeholder="E-mail">
+                    <input type="tel" class="payment__form" placeholder="Телефон">
+                    <input type="text" class="payment__form" disabled value="Frontend">
+                </form>
+                <a href="#" class="payment__form-link">
+                    <div class="payment__form-button">
+                        Записаться на курс
+                    </div>
+                </a>
+            </div>
+            <div class="payment__chance">
+                <div class="payment__chance-one-text">
+                    Инвестировать в себя – самый выгодный вид капиталовложений.
+                </div>
+                <div class="payment__chance-two-text">
+                    Не упусти свой шанс!
+                </div>
+                <div class="payment__chance-img-wrapper">
+                    <img src="img/payment_img_chance.svg" alt="" class="payment__chance-img">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="contacts">
+        <div class="contacts__wrapper">
+            <div class="contacts__form">
+                <span class="contacts__header">ОСТАЛИСЬ ВОПРОСЫ?</span>
+                <br>
+                <span class="contacts__text">Пишите или звоните</span>
+                <div class="contacts__number">
+                    <span class="contacts__title">Телефон:</span>
+                    <div>
+                        <span>+375 (44) 559 87 14</span>
+                        <span>+375 (25) 559 87 15</span>
+                    </div>
+                </div>
+                <div class="contacts__email">
+                    <span class="contacts__title">E-mail:</span>
+                    <div>
+                        <span>itec.complex@mail.ru</span>
+                    </div>
+                </div>
+                <div class="contacts__telegram">
+                    <span class="contacts__title">Telegram:</span>
+                    <div>
+                        <span>@iteccomplex</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <form class="footer__form">
+                <div class="footer__title">Бесплатная индивидуальная консультация:</div>
+                <p class="footer__input-number">
+                    <input class="footer__input" type="tel" name="telephone" placeholder="+375 ( - - )  ---  --  --" />
+                </p>
+                <p class="footer__input-name">
+                    <input class="footer__input" type="text" name="name" placeholder="ИМЯ" />
+                </p>
+                <p class="footer__input-button">
+                    <input class="footer__button" type="submit" value="Получить консультацию" />
+                </p>
+            </form>
+            <div class="footer__nav">
+                <div class="footer__container">
+                    <div class="footer__nav-title">О нас</div>
+                    <a href="#" class="footer__nav-link">Наша команда</a>
+                    <a href="#" class="footer__nav-link">Наш блог</a>
+                    <a href="#" class="footer__nav-link">Наши проекты</a>
+                </div>
+                <div class="footer__container">
+                    <div class="footer__nav-title">Курсы</div>
+                    <a href="#" class="footer__nav-link">Backend</a>
+                    <a href="#" class="footer__nav-link">Frontend</a>
+                    <a href="#" class="footer__nav-link">QA Engineer</a>
+                </div>
+                <div class="footer__container">
+                    <div class="footer__nav-title">Помощь</div>
+                    <a href="#" class="footer__nav-link">Тест на <br> IT-специальность</a>
+                    <a href="#" class="footer__nav-link">Вакансии</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__wrapper_second">
+            <div class="footer__logo">
+                <img class="footer__logo-img" src="img/logo_ITEC-blue.svg">
+            </div>
+            <div class="footer__address">
+                <div class="footer__address-place">г. Минск, ул. Кирова 10</div>
+                <a class="footer__address-show">Посмотреть на карте</a>
+                <div class="footer__phone">+375 (29) 193-95-77</div>
+                <div class="footer__phone">+375 (29) 193-95-78</div>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom">ITEC education company. Все права защищены 2020</div>
+    <script src = "./js/header.js"></script>
+</body>
+</html>
